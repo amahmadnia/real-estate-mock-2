@@ -6,6 +6,9 @@ import ContactCard from './components/PropertyInfo/ContactCard';
 import SpecsTable from './components/Details/SpecsTable';
 import Features from './components/Details/Features';
 import Description from './components/Details/Description';
+import LocationSection from './components/Details/LocationSection';
+import TourScheduling from './components/Details/TourScheduling';
+import OpinionForm from './components/Details/OpinionForm';
 import RelatedPropertiesGrid from './components/RelatedProperties/RelatedPropertiesGrid';
 import Footer from './components/Footer/Footer';
 import { property } from './data/propertyData';
@@ -44,11 +47,17 @@ function App() {
 
               {/* Features Grid */}
               <Features features={property.features} />
+
+              {/* Location Section - Added below features */}
+              <LocationSection location={property.location} />
+
+              {/* Tour Scheduling Form */}
+              <TourScheduling />
             </div>
 
             {/* Sidebar - Right Side */}
             <div className="lg:col-span-1">
-              <ContactCard agent={property.agent} />
+              <ContactCard agent={property.agent} propertyTitle={property.title} />
             </div>
           </div>
         </div>
@@ -56,6 +65,9 @@ function App() {
 
       {/* Related Properties */}
       <RelatedPropertiesGrid properties={relatedProperties} />
+
+      {/* Opinion Form - Last Section before Footer */}
+      <OpinionForm />
 
       {/* Footer */}
       <Footer />

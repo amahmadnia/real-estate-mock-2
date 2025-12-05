@@ -1,13 +1,7 @@
 export const property = {
   id: "3973",
   title: "خرید ویلا دوبلکس در چمستان با سند تک برگ ملک",
-  description: `این ویلا در یکی از بهترین مناطق چمستان واقع شده است. دارای سند تک برگ ملک و موقعیت عالی برای سکونت یا سرمایه گذاری.
-
-املاک دارای دو طبقه با معماری مدرن و فضای باز است. باغچه و محوطه سازی شده با درختان میوه. دسترسی آسان به تمامی امکانات رفاهی و تفریحی.
-
-این ملک با نمای مدرن و استفاده از مصالح درجه یک ساخته شده است. دارای پارکینگ اختصاصی، انباری و فضای سبز قابل توجه می‌باشد. موقعیت ملک در منطقه‌ای آرام و با دسترسی عالی به مراکز خرید و رفاهی است.
-
-برای بازدید حضوری و کسب اطلاعات بیشتر با ما تماس بگیرید.`,
+  description: `این ویلا دوبلکس نوساز با طراحی مدرن و امکانات رفاهی عالی در شهرک بهار نارنج قرار دارد. با ۹۰۰ متر زمین و ۵۵۰ متر بنا، فضای بزرگی برای زندگی راحت و لوکس فراهم می‌کند. این ویلا شامل آسانسور، آلاچیق، شاهنشین، و آبنما است که به زیبایی‌های فضای خارجی افزوده است. موقعیت عالی این ویلا در شهرک ساحلی، شما را از زیبایی‌های دریای شمال بهره‌مند خواهد کرد. اگر به دنبال یک خانه لوکس و کامل با تمامی امکانات هستید، این ویلا گزینه‌ای مناسب برای شما خواهد بود.`,
 
   price: {
     amount: 5000000000,
@@ -17,7 +11,8 @@ export const property = {
 
   location: {
     city: "چمستان",
-    district: "منطقه 1",
+    province: "مازندران",
+    district: "شهرک بهار نارنج",
     address: "چمستان، خیابان اصلی، کوچه گلستان",
     coordinates: { lat: 36.1234, lng: 51.5678 }
   },
@@ -56,16 +51,16 @@ export const property = {
   ],
 
   specifications: {
-    landSize: 350,
-    builtArea: 280,
-    bedrooms: 3,
-    bathrooms: 2,
+    landSize: 900,
+    builtArea: 550,
+    bedrooms: 4,
+    bathrooms: 3,
     propertyType: "ویلا دوبلکس",
-    yearBuilt: 1400,
+    yearBuilt: 1402,
     floors: 2,
     parking: 2,
     storage: true,
-    elevator: false,
+    elevator: true,
     documentType: "تک برگ",
     flooring: "سرامیک",
     heating: "پکیج",
@@ -78,7 +73,7 @@ export const property = {
       { id: 1, name: "پارکینگ", available: true, icon: "parking" },
       { id: 2, name: "انباری", available: true, icon: "warehouse" },
       { id: 3, name: "بالکن", available: true, icon: "balcony" },
-      { id: 4, name: "آسانسور", available: false, icon: "elevator" }
+      { id: 4, name: "آسانسور", available: true, icon: "elevator" }
     ],
     utilities: [
       { id: 5, name: "گاز", available: true, icon: "flame" },
