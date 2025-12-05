@@ -1,68 +1,166 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css');
+@import url('https://cdn.fontcdn.ir/Font/Persian/Estedad/Estedad.css');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@layer base {
+  html {
+    font-family: 'Vazir', 'Segoe UI', Tahoma, sans-serif;
+    direction: rtl;
+    text-align: right;
   }
-  a:hover {
-    color: #747bff;
+
+  body {
+    @apply text-gray-800 bg-gray-50;
+    font-feature-settings: 'kern' 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  button {
-    background-color: #f9f9f9;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Estedad', 'Vazir', sans-serif;
+    @apply text-gray-900 font-bold;
   }
+}
+
+@layer components {
+  /* Button Styles */
+  .btn-primary {
+    @apply bg-primary text-white px-7 py-3.5 rounded-xl font-semibold text-base border-none shadow-md transition-all duration-300 cursor-pointer hover:bg-primary-dark hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 active:shadow-sm;
+  }
+
+  .btn-secondary {
+    @apply bg-white border-2 border-primary text-primary px-7 py-3.5 rounded-xl font-semibold transition-all duration-300 hover:bg-primary hover:text-white;
+  }
+
+  .btn-whatsapp {
+    @apply bg-gradient-to-r from-green-500 to-green-600 text-white inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold shadow-lg shadow-green-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-green-500/40 hover:scale-105;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-primary hover:text-white;
+  }
+
+  /* Card Styles */
+  .card {
+    @apply bg-white rounded-2xl p-6 shadow-card transition-all duration-300 border border-gray-100 hover:shadow-card-hover hover:-translate-y-1;
+  }
+
+  .property-card {
+    @apply bg-white rounded-2xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl;
+  }
+
+  /* Badge Styles */
+  .badge {
+    @apply inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wide;
+  }
+
+  .badge-new {
+    @apply bg-gradient-to-r from-green-500 to-green-600 text-white shadow-md shadow-green-500/30;
+  }
+
+  .badge-featured {
+    @apply bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-md shadow-blue-500/30;
+  }
+
+  .badge-sold {
+    @apply bg-gradient-to-r from-red-500 to-red-600 text-white shadow-md shadow-red-500/30;
+  }
+
+  /* Input Styles */
+  .input-field {
+    @apply w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl text-base transition-all duration-300 bg-white focus:outline-none focus:border-primary focus:shadow-lg focus:shadow-primary/10 hover:border-gray-400;
+  }
+
+  /* Container */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Glass effect */
+  .glass {
+    @apply bg-white/85 backdrop-blur-lg border border-white/50 shadow-glass;
+  }
+
+  /* Gradient text */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-gold to-accent-gold-light;
+  }
+
+  /* Hide scrollbar */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 rounded-lg hover:bg-gray-500;
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
 }
