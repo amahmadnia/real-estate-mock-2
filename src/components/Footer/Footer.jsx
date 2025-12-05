@@ -37,7 +37,7 @@ const Footer = () => {
                 <Home className="text-white" size={24} />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">املاک مدرن</h3>
+                <h3 className="text-2xl font-bold text-white">املاک مدرن</h3>
               </div>
             </div>
             <p className="text-white/80 leading-relaxed">
@@ -59,7 +59,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-xl font-bold mb-6">دسترسی سریع</h4>
+            <h4 className="text-xl font-bold mb-6 text-white">دسترسی سریع</h4>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -76,7 +76,7 @@ const Footer = () => {
 
           {/* Property Types */}
           <div>
-            <h4 className="text-xl font-bold mb-6">انواع املاک</h4>
+            <h4 className="text-xl font-bold mb-6 text-white">انواع املاک</h4>
             <ul className="space-y-3">
               {propertyTypes.map((type, index) => (
                 <li key={index}>
@@ -93,7 +93,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-xl font-bold mb-6">اطلاعات تماس</h4>
+            <h4 className="text-xl font-bold mb-6 text-white">اطلاعات تماس</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="flex-shrink-0 mt-1" />

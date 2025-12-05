@@ -36,12 +36,12 @@ export const property = {
       thumbnail: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=200",
       alt: "آشپزخانه مدرن"
     },
-    {
-      id: 4,
-      url: "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800",
-      thumbnail: "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=200",
-      alt: "اتاق خواب اصلی"
-    },
+    // {
+    //   id: 4,
+    //   url: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800",
+    //   thumbnail: "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=200",
+    //   alt: "اتاق خواب اصلی"
+    // },
     {
       id: 5,
       url: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800",
