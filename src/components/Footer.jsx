@@ -26,7 +26,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-charcoal via-charcoal to-deep-forest text-white">
+    <footer className="bg-gradient-to-br from-jet-black via-jet-black to-dusk-blue-dark text-white">
       {/* Main Footer */}
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-3xl font-bold mb-2">
-                <span className="text-gold">آرمان</span> لوکس
+                <span className="text-burnt-peach">آرمان</span> لوکس
               </h3>
               <p className="text-white/70 leading-relaxed">
                 بیش از 20 سال تجربه در ساخت و ساز پروژه‌های لوکس مسکونی در بهترین نقاط تهران
@@ -70,9 +70,9 @@ const Footer = () => {
                 <li key={link.id}>
                   <a
                     href={link.href}
-                    className="text-white/70 hover:text-gold transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-white/70 hover:text-burnt-peach transition-colors duration-300 flex items-center gap-2 group"
                   >
-                    <span className="w-1.5 h-1.5 bg-gold rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    <span className="w-1.5 h-1.5 bg-burnt-peach rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                     {link.title}
                   </a>
                 </li>
@@ -90,7 +90,7 @@ const Footer = () => {
                     href="#"
                     className="group block"
                   >
-                    <h5 className="text-white font-semibold mb-1 group-hover:text-gold transition-colors duration-300">
+                    <h5 className="text-white font-semibold mb-1 group-hover:text-burnt-peach transition-colors duration-300">
                       {project.title}
                     </h5>
                     <p className="text-white/60 text-sm flex items-center gap-1">
@@ -108,32 +108,32 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6">تماس با ما</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 h-5 text-gold" />
+                <div className="w-10 h-10 bg-burnt-peach/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-5 h-5 text-burnt-peach" />
                 </div>
                 <div>
                   <p className="text-sm text-white/60 mb-1">تلفن تماس</p>
-                  <a href="tel:+982188776655" className="text-white hover:text-gold transition-colors duration-300">
+                  <a href="tel:+982188776655" className="text-white hover:text-burnt-peach transition-colors duration-300">
                     021-88776655
                   </a>
                 </div>
               </li>
 
               <li className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-5 h-5 text-gold" />
+                <div className="w-10 h-10 bg-burnt-peach/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-5 h-5 text-burnt-peach" />
                 </div>
                 <div>
                   <p className="text-sm text-white/60 mb-1">ایمیل</p>
-                  <a href="mailto:info@armanlux.ir" className="text-white hover:text-gold transition-colors duration-300">
+                  <a href="mailto:info@armanlux.ir" className="text-white hover:text-burnt-peach transition-colors duration-300">
                     info@armanlux.ir
                   </a>
                 </div>
               </li>
 
               <li className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-gold" />
+                <div className="w-10 h-10 bg-burnt-peach/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-5 h-5 text-burnt-peach" />
                 </div>
                 <div>
                   <p className="text-sm text-white/60 mb-1">آدرس</p>
@@ -155,13 +155,13 @@ const Footer = () => {
               © {currentYear} آرمان لوکس. تمامی حقوق محفوظ است.
             </p>
             <div className="flex items-center gap-6">
-              <a href="#" className="hover:text-gold transition-colors duration-300">
+              <a href="#" className="hover:text-burnt-peach transition-colors duration-300">
                 حریم خصوصی
               </a>
-              <a href="#" className="hover:text-gold transition-colors duration-300">
+              <a href="#" className="hover:text-burnt-peach transition-colors duration-300">
                 شرایط و قوانین
               </a>
-              <a href="#" className="hover:text-gold transition-colors duration-300">
+              <a href="#" className="hover:text-burnt-peach transition-colors duration-300">
                 درباره ما
               </a>
             </div>

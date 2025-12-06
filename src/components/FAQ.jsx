@@ -47,14 +47,14 @@ const FAQ = () => {
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h3 className="inline-block px-6 py-3 bg-forest-green text-white rounded-full text-lg font-bold mb-6 shadow-lg">
+            <h3 className="inline-block px-6 py-3 bg-dusk-blue text-white rounded-full text-lg font-bold mb-6 shadow-lg">
               سوالات متداول
             </h3>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-jet-black mb-6">
               پاسخ به
-              <span className="block mt-2 bg-gradient-to-r from-forest-green to-gold bg-clip-text text-transparent">سوالات شما</span>
+              <span className="block mt-2 bg-gradient-to-r from-dusk-blue to-burnt-peach bg-clip-text text-transparent">سوالات شما</span>
             </h2>
-            <p className="text-charcoal text-xl mt-6 leading-relaxed font-medium">
+            <p className="text-jet-black text-xl mt-6 leading-relaxed font-medium">
               پاسخ سوالات رایج درباره پروژه، قیمت‌ها و شرایط خرید
             </p>
           </div>
@@ -64,23 +64,23 @@ const FAQ = () => {
             {faqs.map((faq) => (
               <div
                 key={faq.id}
-                className="bg-cream rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
+                className="bg-light-cyan rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
               >
                 {/* Question */}
                 <button
                   onClick={() => toggleAccordion(faq.id)}
                   className="w-full flex items-center justify-between gap-4 p-6 text-right hover:bg-white transition-colors duration-300"
                 >
-                  <h3 className="text-lg font-bold text-charcoal flex-1">
+                  <h3 className="text-lg font-bold text-jet-black flex-1">
                     {faq.question}
                   </h3>
-                  <div className={`w-8 h-8 bg-forest-green/10 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
-                    activeIndex === faq.id ? 'bg-forest-green' : ''
+                  <div className={`w-8 h-8 bg-dusk-blue/10 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
+                    activeIndex === faq.id ? 'bg-dusk-blue' : ''
                   }`}>
                     {activeIndex === faq.id ? (
                       <Minus className="w-5 h-5 text-white" />
                     ) : (
-                      <Plus className="w-5 h-5 text-forest-green" />
+                      <Plus className="w-5 h-5 text-dusk-blue" />
                     )}
                   </div>
                 </button>
@@ -92,7 +92,7 @@ const FAQ = () => {
                   }`}
                 >
                   <div className="px-6 pb-6">
-                    <div className="border-r-4 border-gold pr-4">
+                    <div className="border-r-4 border-burnt-peach pr-4">
                       <p className="text-warm-gray leading-relaxed">
                         {faq.answer}
                       </p>
@@ -104,8 +104,8 @@ const FAQ = () => {
           </div>
 
           {/* Contact CTA */}
-          <div className="mt-12 text-center bg-gradient-to-r from-cream to-white rounded-2xl p-8 border border-stone/30">
-            <h3 className="text-2xl font-bold text-charcoal mb-3">
+          <div className="mt-12 text-center bg-gradient-to-r from-light-cyan to-white rounded-2xl p-8 border border-stone/30">
+            <h3 className="text-2xl font-bold text-jet-black mb-3">
               سوال دیگری دارید؟
             </h3>
             <p className="text-warm-gray mb-6">

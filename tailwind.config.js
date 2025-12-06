@@ -7,17 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'forest-green': '#2C5F2D',
-        'deep-forest': '#1a3a1b',
-        'sage-green': '#7A9B7C',
-        'gold': '#C9A961',
-        'gold-dark': '#B8954F',
-        'champagne': '#F4E8D0',
-        'ivory': '#FEFCF8',
-        'cream': '#F8F6F2',
-        'stone': '#E8E6E1',
-        'charcoal': '#2D2D2D',
+        'dusk-blue': '#3d5a80',
+        'dusk-blue-dark': '#2d4560',
+        'powder-blue': '#98c1d9',
+        'light-cyan': '#e0fbfc',
+        'burnt-peach': '#ee6c4d',
+        'burnt-peach-dark': '#d85a3d',
+        'jet-black': '#293241',
         'warm-gray': '#6B6B6B',
+        'stone': '#d4e4e8',
       },
       fontFamily: {
         'vazir': ['Vazirmatn', 'sans-serif'],

@@ -98,14 +98,14 @@ const Gallery = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h3 className="inline-block px-6 py-3 bg-gradient-to-r from-forest-green to-gold text-white rounded-full text-lg font-bold mb-6 shadow-lg">
+          <h3 className="inline-block px-6 py-3 bg-gradient-to-r from-dusk-blue to-burnt-peach text-white rounded-full text-lg font-bold mb-6 shadow-lg">
             گالری تصاویر
           </h3>
-          <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-jet-black mb-6">
             نگاهی به
-            <span className="block mt-2 bg-gradient-to-r from-forest-green to-gold bg-clip-text text-transparent">زیبایی پروژه</span>
+            <span className="block mt-2 bg-gradient-to-r from-dusk-blue to-burnt-peach bg-clip-text text-transparent">زیبایی پروژه</span>
           </h2>
-          <p className="text-charcoal text-xl mt-6 leading-relaxed font-medium">
+          <p className="text-jet-black text-xl mt-6 leading-relaxed font-medium">
             تصاویر واقعی از نما، فضاها و امکانات ساختمان
           </p>
         </div>
@@ -118,8 +118,8 @@ const Gallery = () => {
               onClick={() => setActiveCategory(category.id)}
               className={`px-6 py-3 rounded-full font-semibold text-base transition-all duration-300 border-2 ${
                 activeCategory === category.id
-                  ? 'bg-forest-green border-forest-green text-white shadow-xl scale-105'
-                  : 'bg-white border-stone text-charcoal hover:border-forest-green hover:bg-cream'
+                  ? 'bg-dusk-blue border-dusk-blue text-white shadow-xl scale-105'
+                  : 'bg-white border-stone text-jet-black hover:border-dusk-blue hover:bg-light-cyan'
               }`}
             >
               {category.title}

@@ -22,7 +22,7 @@ const RelatedProjects = () => {
       floors: '6 طبقه',
       units: '18 واحد',
       status: 'در حال ساخت',
-      statusColor: 'bg-gold'
+      statusColor: 'bg-burnt-peach'
     },
     {
       id: 3,
@@ -33,23 +33,23 @@ const RelatedProjects = () => {
       floors: '8 طبقه',
       units: '24 واحد',
       status: 'پیش فروش',
-      statusColor: 'bg-forest-green'
+      statusColor: 'bg-dusk-blue'
     }
   ];
 
   return (
-    <section id="related-projects" className="section-padding bg-cream">
+    <section id="related-projects" className="section-padding bg-light-cyan">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h3 className="inline-block px-6 py-3 bg-gradient-to-r from-gold to-gold-dark text-white rounded-full text-lg font-bold mb-6 shadow-lg">
+          <h3 className="inline-block px-6 py-3 bg-gradient-to-r from-burnt-peach to-burnt-peach-dark text-white rounded-full text-lg font-bold mb-6 shadow-lg">
             پروژه‌های دیگر
           </h3>
-          <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-jet-black mb-6">
             نمونه‌هایی از
-            <span className="block mt-2 bg-gradient-to-r from-forest-green to-gold bg-clip-text text-transparent">کارهای ما</span>
+            <span className="block mt-2 bg-gradient-to-r from-dusk-blue to-burnt-peach bg-clip-text text-transparent">کارهای ما</span>
           </h2>
-          <p className="text-charcoal text-xl mt-6 leading-relaxed font-medium">
+          <p className="text-jet-black text-xl mt-6 leading-relaxed font-medium">
             مجموعه‌ای از پروژه‌های موفق ما در سراسر تهران
           </p>
         </div>
@@ -92,12 +92,12 @@ const RelatedProjects = () => {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-charcoal mb-2">
+                <h3 className="text-2xl font-bold text-jet-black mb-2">
                   {project.title}
                 </h3>
 
                 <div className="flex items-center gap-2 text-warm-gray mb-4">
-                  <MapPin className="w-4 h-4 text-forest-green" />
+                  <MapPin className="w-4 h-4 text-dusk-blue" />
                   <span className="text-sm">{project.location}</span>
                 </div>
 
@@ -108,7 +108,7 @@ const RelatedProjects = () => {
                 {/* CTA Button */}
                 <a
                   href="#"
-                  className="inline-flex items-center gap-2 text-forest-green hover:text-deep-forest font-semibold transition-colors duration-300 group/btn"
+                  className="inline-flex items-center gap-2 text-dusk-blue hover:text-dusk-blue-dark font-semibold transition-colors duration-300 group/btn"
                 >
                   <span>مشاهده جزئیات</span>
                   <ArrowLeft className="w-4 h-4 group-hover/btn:-translate-x-1 transition-transform duration-300" />
@@ -122,7 +122,7 @@ const RelatedProjects = () => {
         <div className="mt-12 text-center">
           <a
             href="#"
-            className="inline-block px-10 py-4 bg-transparent border-2 border-forest-green text-forest-green rounded-sm font-semibold text-base tracking-wide uppercase transition-all duration-300 hover:bg-forest-green hover:text-white shadow-lg hover:shadow-xl hover:-translate-y-1"
+            className="inline-block px-10 py-4 bg-transparent border-2 border-dusk-blue text-dusk-blue rounded-sm font-semibold text-base tracking-wide uppercase transition-all duration-300 hover:bg-dusk-blue hover:text-white shadow-lg hover:shadow-xl hover:-translate-y-1"
           >
             مشاهده همه پروژه‌ها
           </a>

@@ -9,8 +9,8 @@
 
   body {
     font-family: 'Vazirmatn', sans-serif;
-    color: #2D2D2D;
-    background-color: #FEFCF8;
+    color: #293241;
+    background-color: #e0fbfc;
     direction: rtl;
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@
 
 /* Custom Selection Color */
 ::selection {
-  background-color: #C9A961;
+  background-color: #ee6c4d;
   color: white;
 }
 
@@ -33,14 +33,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #F8F6F2;
+  background: #e0fbfc;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2C5F2D;
+  background: #3d5a80;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #1a3a1b;
+  background: #2d4560;
 }

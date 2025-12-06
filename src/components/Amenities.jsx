@@ -90,18 +90,18 @@ const Amenities = () => {
   ];
 
   return (
-    <section id="amenities" className="section-padding bg-gradient-to-br from-cream via-white to-cream">
+    <section id="amenities" className="section-padding bg-gradient-to-br from-light-cyan via-white to-light-cyan">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h3 className="inline-block px-6 py-3 bg-gold text-white rounded-full text-lg font-bold mb-6 shadow-lg">
+          <h3 className="inline-block px-6 py-3 bg-burnt-peach text-white rounded-full text-lg font-bold mb-6 shadow-lg">
             امکانات رفاهی
           </h3>
-          <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-jet-black mb-6">
             تجربه زندگی
-            <span className="block mt-2 bg-gradient-to-r from-forest-green to-gold bg-clip-text text-transparent">در سطح جهانی</span>
+            <span className="block mt-2 bg-gradient-to-r from-dusk-blue to-burnt-peach bg-clip-text text-transparent">در سطح جهانی</span>
           </h2>
-          <p className="text-charcoal text-xl mt-6 leading-relaxed font-medium">
+          <p className="text-jet-black text-xl mt-6 leading-relaxed font-medium">
             بیش از 20 امکانات لوکس و پیشرفته برای راحتی و آسایش شما
           </p>
         </div>
@@ -113,17 +113,17 @@ const Amenities = () => {
             return (
               <div
                 key={amenity.id}
-                className="group text-center p-8 rounded-2xl bg-white border-2 border-stone/30 hover:border-gold hover:shadow-2xl transition-all duration-300 hover:-translate-y-3"
+                className="group text-center p-8 rounded-2xl bg-white border-2 border-stone/30 hover:border-burnt-peach hover:shadow-2xl transition-all duration-300 hover:-translate-y-3"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 {/* Icon Container */}
-                <div className="w-24 h-24 mx-auto mb-5 bg-gradient-to-br from-forest-green to-sage-green rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
+                <div className="w-24 h-24 mx-auto mb-5 bg-gradient-to-br from-dusk-blue to-powder-blue rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
                   <Icon className="w-12 h-12 text-white" strokeWidth={1.5} />
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-forest-green transition-colors">{amenity.title}</h3>
-                <p className="text-base text-charcoal/70 leading-relaxed">{amenity.description}</p>
+                <h3 className="text-xl font-bold text-jet-black mb-3 group-hover:text-dusk-blue transition-colors">{amenity.title}</h3>
+                <p className="text-base text-jet-black/70 leading-relaxed">{amenity.description}</p>
               </div>
             );
           })}

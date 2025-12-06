@@ -36,18 +36,18 @@ const Location = () => {
   ];
 
   return (
-    <section id="location" className="section-padding bg-cream">
+    <section id="location" className="section-padding bg-light-cyan">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h3 className="inline-block px-6 py-3 bg-forest-green text-white rounded-full text-lg font-bold mb-6 shadow-lg">
+          <h3 className="inline-block px-6 py-3 bg-dusk-blue text-white rounded-full text-lg font-bold mb-6 shadow-lg">
             موقعیت مکانی
           </h3>
-          <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-jet-black mb-6">
             قلب تپنده
-            <span className="block mt-2 bg-gradient-to-r from-forest-green to-gold bg-clip-text text-transparent">شهر</span>
+            <span className="block mt-2 bg-gradient-to-r from-dusk-blue to-burnt-peach bg-clip-text text-transparent">شهر</span>
           </h2>
-          <p className="text-charcoal text-xl mt-6 leading-relaxed font-medium">
+          <p className="text-jet-black text-xl mt-6 leading-relaxed font-medium">
             در بهترین منطقه شمال تهران، با دسترسی آسان به تمام امکانات شهری
           </p>
         </div>
@@ -59,11 +59,11 @@ const Location = () => {
             {/* Area Description */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-forest-green/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6 text-forest-green" />
+                <div className="w-12 h-12 bg-dusk-blue/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-6 h-6 text-dusk-blue" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-charcoal mb-2">شمال تهران</h3>
+                  <h3 className="text-2xl font-bold text-jet-black mb-2">شمال تهران</h3>
                   <p className="text-warm-gray leading-relaxed">
                     منطقه 1 تهران، یکی از مرغوب‌ترین و آرام‌ترین مناطق شهر با هوای پاک و دسترسی عالی به تمامی امکانات رفاهی و تفریحی
                   </p>
@@ -71,10 +71,10 @@ const Location = () => {
               </div>
 
               {/* Climate */}
-              <div className="bg-cream rounded-xl p-6">
+              <div className="bg-light-cyan rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <Thermometer className="w-5 h-5 text-gold-dark" />
-                  <h4 className="font-bold text-charcoal">آب و هوا</h4>
+                  <Thermometer className="w-5 h-5 text-burnt-peach-dark" />
+                  <h4 className="font-bold text-jet-black">آب و هوا</h4>
                 </div>
                 <p className="text-warm-gray text-sm leading-relaxed">
                   آب و هوای معتدل و خنک، دمای متوسط سالانه 15 درجه، هوای پاک کوهستانی
@@ -84,17 +84,17 @@ const Location = () => {
 
             {/* Nearby Amenities */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-xl font-bold text-charcoal mb-6">مراکز مجاور</h3>
+              <h3 className="text-xl font-bold text-jet-black mb-6">مراکز مجاور</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {locationFeatures.map((feature) => {
                   const Icon = feature.icon;
                   return (
                     <div key={feature.id} className="flex items-start gap-3">
-                      <div className="w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-5 h-5 text-gold-dark" />
+                      <div className="w-10 h-10 bg-burnt-peach/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Icon className="w-5 h-5 text-burnt-peach-dark" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-charcoal text-sm mb-1">{feature.title}</h4>
+                        <h4 className="font-semibold text-jet-black text-sm mb-1">{feature.title}</h4>
                         <p className="text-warm-gray text-xs leading-relaxed">{feature.description}</p>
                       </div>
                     </div>
@@ -104,17 +104,17 @@ const Location = () => {
             </div>
 
             {/* Transportation */}
-            <div className="bg-gradient-to-br from-forest-green to-deep-forest rounded-2xl p-8 shadow-xl border-2 border-gold/20">
+            <div className="bg-gradient-to-br from-dusk-blue to-dusk-blue-dark rounded-2xl p-8 shadow-xl border-2 border-burnt-peach/20">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-gold rounded-full flex items-center justify-center">
-                  <Navigation className="w-6 h-6 text-charcoal" />
+                <div className="w-12 h-12 bg-burnt-peach rounded-full flex items-center justify-center">
+                  <Navigation className="w-6 h-6 text-jet-black" />
                 </div>
                 <h3 className="text-2xl font-bold text-white">دسترسی‌ها</h3>
               </div>
               <ul className="space-y-4">
                 {transportation.map((item, index) => (
                   <li key={index} className="flex items-center gap-4 bg-white/10 rounded-lg p-3 backdrop-blur-sm">
-                    <div className="w-3 h-3 bg-gold rounded-full flex-shrink-0"></div>
+                    <div className="w-3 h-3 bg-burnt-peach rounded-full flex-shrink-0"></div>
                     <span className="text-white font-medium text-base">{item}</span>
                   </li>
                 ))}
@@ -139,13 +139,13 @@ const Location = () => {
               </div>
               <div className="mt-4 text-center">
                 <p className="text-sm text-warm-gray mb-2">
-                  <strong className="text-charcoal">آدرس:</strong> تهران، منطقه 1، خیابان ولنجک
+                  <strong className="text-jet-black">آدرس:</strong> تهران، منطقه 1، خیابان ولنجک
                 </p>
                 <a
                   href="https://maps.google.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-forest-green hover:text-deep-forest font-semibold text-sm transition-colors duration-300"
+                  className="inline-flex items-center gap-2 text-dusk-blue hover:text-dusk-blue-dark font-semibold text-sm transition-colors duration-300"
                 >
                   <MapPin className="w-4 h-4" />
                   مشاهده در نقشه بزرگتر

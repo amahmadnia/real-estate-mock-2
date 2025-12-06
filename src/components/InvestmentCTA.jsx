@@ -23,7 +23,7 @@ const InvestmentCTA = () => {
   ];
 
   return (
-    <section className="section-padding bg-gradient-to-br from-forest-green via-deep-forest to-forest-green relative overflow-hidden">
+    <section className="section-padding bg-gradient-to-br from-dusk-blue via-dusk-blue-dark to-dusk-blue relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -36,13 +36,13 @@ const InvestmentCTA = () => {
         <div className="max-w-5xl mx-auto">
           {/* Main Content */}
           <div className="text-center text-white mb-12">
-            <h3 className="inline-block px-6 py-3 bg-gold text-charcoal rounded-full text-lg font-bold mb-6 shadow-xl">
+            <h3 className="inline-block px-6 py-3 bg-burnt-peach text-jet-black rounded-full text-lg font-bold mb-6 shadow-xl">
               فرصت سرمایه‌گذاری
             </h3>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white">
               بهترین سرمایه‌گذاری برای
               <br />
-              <span className="text-gold drop-shadow-lg">آینده درخشان شما</span>
+              <span className="text-burnt-peach drop-shadow-lg">آینده درخشان شما</span>
             </h2>
             <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed font-medium">
               با خرید واحد در این پروژه، نه تنها صاحب یک خانه لوکس می‌شوید، بلکه سرمایه‌ای امن و سودآور برای آینده خود ایجاد می‌کنید
@@ -55,8 +55,8 @@ const InvestmentCTA = () => {
               const Icon = benefit.icon;
               return (
                 <div key={benefit.id} className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-center hover:bg-white/20 transition-all duration-300">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-gold/20 rounded-full flex items-center justify-center">
-                    <Icon className="w-8 h-8 text-gold" />
+                  <div className="w-16 h-16 mx-auto mb-4 bg-burnt-peach/20 rounded-full flex items-center justify-center">
+                    <Icon className="w-8 h-8 text-burnt-peach" />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">{benefit.title}</h3>
                   <p className="text-white/80 text-sm">{benefit.description}</p>
@@ -67,7 +67,7 @@ const InvestmentCTA = () => {
 
           {/* CTA Section */}
           <div className="bg-white/95 backdrop-blur-md rounded-2xl p-8 md:p-12 text-center shadow-2xl">
-            <h3 className="text-3xl font-bold text-charcoal mb-4">
+            <h3 className="text-3xl font-bold text-jet-black mb-4">
               همین الان درخواست مشاوره رایگان بدهید
             </h3>
             <p className="text-warm-gray text-lg mb-8 max-w-2xl mx-auto">
@@ -80,28 +80,28 @@ const InvestmentCTA = () => {
                 <input
                   type="text"
                   placeholder="نام و نام خانوادگی"
-                  className="px-6 py-4 rounded-lg border-2 border-stone focus:border-forest-green outline-none transition-colors duration-300 text-right"
+                  className="px-6 py-4 rounded-lg border-2 border-stone focus:border-dusk-blue outline-none transition-colors duration-300 text-right"
                   required
                 />
                 <input
                   type="tel"
                   placeholder="شماره تماس"
-                  className="px-6 py-4 rounded-lg border-2 border-stone focus:border-forest-green outline-none transition-colors duration-300 text-right"
+                  className="px-6 py-4 rounded-lg border-2 border-stone focus:border-dusk-blue outline-none transition-colors duration-300 text-right"
                   required
                 />
                 <input
                   type="email"
                   placeholder="ایمیل"
-                  className="px-6 py-4 rounded-lg border-2 border-stone focus:border-forest-green outline-none transition-colors duration-300 text-right md:col-span-2"
+                  className="px-6 py-4 rounded-lg border-2 border-stone focus:border-dusk-blue outline-none transition-colors duration-300 text-right md:col-span-2"
                 />
                 <textarea
                   placeholder="توضیحات (اختیاری)"
                   rows="4"
-                  className="px-6 py-4 rounded-lg border-2 border-stone focus:border-forest-green outline-none transition-colors duration-300 text-right md:col-span-2 resize-none"
+                  className="px-6 py-4 rounded-lg border-2 border-stone focus:border-dusk-blue outline-none transition-colors duration-300 text-right md:col-span-2 resize-none"
                 ></textarea>
               </form>
 
-              <button className="btn-gold w-full md:w-auto md:px-16">
+              <button className="btn-burnt-peach w-full md:w-auto md:px-16">
                 <PhoneCall className="w-5 h-5 inline-block ml-2" />
                 درخواست مشاوره رایگان
               </button>
@@ -115,19 +115,19 @@ const InvestmentCTA = () => {
           {/* Bottom Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 text-center text-white">
             <div>
-              <div className="text-3xl font-bold text-gold mb-1">1000+</div>
+              <div className="text-3xl font-bold text-burnt-peach mb-1">1000+</div>
               <div className="text-sm text-white/80">مشتری راضی</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-gold mb-1">50+</div>
+              <div className="text-3xl font-bold text-burnt-peach mb-1">50+</div>
               <div className="text-sm text-white/80">پروژه موفق</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-gold mb-1">20</div>
+              <div className="text-3xl font-bold text-burnt-peach mb-1">20</div>
               <div className="text-sm text-white/80">سال تجربه</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-gold mb-1">%100</div>
+              <div className="text-3xl font-bold text-burnt-peach mb-1">%100</div>
               <div className="text-sm text-white/80">رضایت مشتری</div>
             </div>
           </div>
