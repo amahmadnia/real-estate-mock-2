@@ -42,14 +42,14 @@ const RelatedProjects = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-2 bg-gold/10 text-gold-dark rounded-full text-sm font-semibold mb-4">
+          <h3 className="inline-block px-6 py-3 bg-gradient-to-r from-gold to-gold-dark text-white rounded-full text-lg font-bold mb-6 shadow-lg">
             پروژه‌های دیگر
-          </span>
-          <h2 className="heading-secondary">
+          </h3>
+          <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
             نمونه‌هایی از
-            <span className="gradient-text"> کارهای ما</span>
+            <span className="block mt-2 bg-gradient-to-r from-forest-green to-gold bg-clip-text text-transparent">کارهای ما</span>
           </h2>
-          <p className="text-warm-gray text-lg mt-4 leading-relaxed">
+          <p className="text-charcoal text-xl mt-6 leading-relaxed font-medium">
             مجموعه‌ای از پروژه‌های موفق ما در سراسر تهران
           </p>
         </div>
@@ -122,7 +122,7 @@ const RelatedProjects = () => {
         <div className="mt-12 text-center">
           <a
             href="#"
-            className="btn-secondary inline-block"
+            className="inline-block px-10 py-4 bg-transparent border-2 border-forest-green text-forest-green rounded-sm font-semibold text-base tracking-wide uppercase transition-all duration-300 hover:bg-forest-green hover:text-white shadow-lg hover:shadow-xl hover:-translate-y-1"
           >
             مشاهده همه پروژه‌ها
           </a>

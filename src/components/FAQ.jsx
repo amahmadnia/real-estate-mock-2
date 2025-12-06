@@ -47,14 +47,14 @@ const FAQ = () => {
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <span className="inline-block px-4 py-2 bg-forest-green/10 text-forest-green rounded-full text-sm font-semibold mb-4">
+            <h3 className="inline-block px-6 py-3 bg-forest-green text-white rounded-full text-lg font-bold mb-6 shadow-lg">
               سوالات متداول
-            </span>
-            <h2 className="heading-secondary">
+            </h3>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
               پاسخ به
-              <span className="gradient-text"> سوالات شما</span>
+              <span className="block mt-2 bg-gradient-to-r from-forest-green to-gold bg-clip-text text-transparent">سوالات شما</span>
             </h2>
-            <p className="text-warm-gray text-lg mt-4 leading-relaxed">
+            <p className="text-charcoal text-xl mt-6 leading-relaxed font-medium">
               پاسخ سوالات رایج درباره پروژه، قیمت‌ها و شرایط خرید
             </p>
           </div>

@@ -58,14 +58,14 @@ const BuildingVariants = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-2 bg-gold/10 text-gold-dark rounded-full text-sm font-semibold mb-4">
+          <h3 className="inline-block px-6 py-3 bg-gradient-to-r from-gold-dark to-gold text-white rounded-full text-lg font-bold mb-6 shadow-lg">
             انواع واحدها
-          </span>
-          <h2 className="heading-secondary">
+          </h3>
+          <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
             انتخاب متناسب با
-            <span className="gradient-text"> سبک زندگی شما</span>
+            <span className="block mt-2 bg-gradient-to-r from-forest-green to-gold bg-clip-text text-transparent">سبک زندگی شما</span>
           </h2>
-          <p className="text-warm-gray text-lg mt-4 leading-relaxed">
+          <p className="text-charcoal text-xl mt-6 leading-relaxed font-medium">
             از واحدهای دو خوابه تا پنت هاوس لوکس، هر کدام با امکانات ویژه و طراحی منحصر به فرد
           </p>
         </div>

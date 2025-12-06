@@ -36,15 +36,15 @@ const InvestmentCTA = () => {
         <div className="max-w-5xl mx-auto">
           {/* Main Content */}
           <div className="text-center text-white mb-12">
-            <span className="inline-block px-4 py-2 bg-gold/20 backdrop-blur-md border border-gold/30 rounded-full text-gold font-semibold text-sm mb-6">
+            <h3 className="inline-block px-6 py-3 bg-gold text-charcoal rounded-full text-lg font-bold mb-6 shadow-xl">
               فرصت سرمایه‌گذاری
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            </h3>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white">
               بهترین سرمایه‌گذاری برای
               <br />
-              <span className="text-gold">آینده درخشان شما</span>
+              <span className="text-gold drop-shadow-lg">آینده درخشان شما</span>
             </h2>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed font-medium">
               با خرید واحد در این پروژه، نه تنها صاحب یک خانه لوکس می‌شوید، بلکه سرمایه‌ای امن و سودآور برای آینده خود ایجاد می‌کنید
             </p>
           </div>

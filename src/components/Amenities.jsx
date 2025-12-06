@@ -94,14 +94,14 @@ const Amenities = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-2 bg-forest-green/10 text-forest-green rounded-full text-sm font-semibold mb-4">
+          <h3 className="inline-block px-6 py-3 bg-gold text-white rounded-full text-lg font-bold mb-6 shadow-lg">
             امکانات رفاهی
-          </span>
-          <h2 className="heading-secondary">
+          </h3>
+          <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
             تجربه زندگی
-            <span className="gradient-text"> در سطح جهانی</span>
+            <span className="block mt-2 bg-gradient-to-r from-forest-green to-gold bg-clip-text text-transparent">در سطح جهانی</span>
           </h2>
-          <p className="text-warm-gray text-lg mt-4 leading-relaxed">
+          <p className="text-charcoal text-xl mt-6 leading-relaxed font-medium">
             بیش از 20 امکانات لوکس و پیشرفته برای راحتی و آسایش شما
           </p>
         </div>
@@ -113,17 +113,17 @@ const Amenities = () => {
             return (
               <div
                 key={amenity.id}
-                className="group text-center p-6 rounded-xl hover:bg-white hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                className="group text-center p-8 rounded-2xl bg-white border-2 border-stone/30 hover:border-gold hover:shadow-2xl transition-all duration-300 hover:-translate-y-3"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 {/* Icon Container */}
-                <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-forest-green/10 to-gold/10 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
-                  <Icon className="w-10 h-10 text-forest-green group-hover:text-gold-dark transition-colors duration-300" strokeWidth={1.5} />
+                <div className="w-24 h-24 mx-auto mb-5 bg-gradient-to-br from-forest-green to-sage-green rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
+                  <Icon className="w-12 h-12 text-white" strokeWidth={1.5} />
                 </div>
 
                 {/* Content */}
-                <h3 className="text-lg font-bold text-charcoal mb-2">{amenity.title}</h3>
-                <p className="text-sm text-warm-gray leading-relaxed">{amenity.description}</p>
+                <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-forest-green transition-colors">{amenity.title}</h3>
+                <p className="text-base text-charcoal/70 leading-relaxed">{amenity.description}</p>
               </div>
             );
           })}
