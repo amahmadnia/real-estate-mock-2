@@ -12,67 +12,62 @@ const Footer = () => {
     { id: 6, title: 'تماس', href: '#contact' }
   ];
 
-  const recentProjects = [
-    { id: 1, title: 'برج آسمان', location: 'ولنجک' },
-    { id: 2, title: 'پارک نور', location: 'نیاوران' },
-    { id: 3, title: 'رویای سبز', location: 'فرمانیه' }
-  ];
-
   const socialLinks = [
-    { id: 1, icon: Instagram, href: '#', label: 'اینستاگرام', color: 'hover:text-pink-500' },
-    { id: 2, icon: MessageCircle, href: '#', label: 'واتساپ', color: 'hover:text-green-500' },
-    { id: 3, icon: Send, href: '#', label: 'تلگرام', color: 'hover:text-blue-500' },
-    { id: 4, icon: Facebook, href: '#', label: 'فیسبوک', color: 'hover:text-blue-600' }
+    { id: 1, icon: Instagram, href: '#', label: 'اینستاگرام', color: 'hover:text-accent' },
+    { id: 2, icon: MessageCircle, href: '#', label: 'واتساپ', color: 'hover:text-accent' },
+    { id: 3, icon: Send, href: '#', label: 'تلگرام', color: 'hover:text-accent' },
+    { id: 4, icon: Twitter, href: '#', label: 'توییتر', color: 'hover:text-accent' }
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-jet-black via-jet-black to-dusk-blue-dark text-white">
-      {/* Main Footer */}
-      <div className="container-custom py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Company Info */}
+    <footer className="bg-white pt-16 pb-8 border-t border-gray-100">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+          
+          {/* Brand & Description */}
           <div className="space-y-6">
-            <div>
-              <h3 className="text-3xl font-bold mb-2">
-                <span className="text-burnt-peach">آرمان</span> لوکس
-              </h3>
-              <p className="text-white/70 leading-relaxed">
-                بیش از 20 سال تجربه در ساخت و ساز پروژه‌های لوکس مسکونی در بهترین نقاط تهران
-              </p>
+            <div className="flex items-center gap-2">
+                 <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    </svg>
+                 </div>
+                <div className="text-xl font-bold text-primary">
+                  آرمان <span className="text-accent">لوکس</span>
+                </div>
             </div>
-
-            {/* Social Media */}
-            <div>
-              <h4 className="text-lg font-semibold mb-4">ما را دنبال کنید</h4>
-              <div className="flex items-center gap-3">
+            
+            <p className="text-secondary/80 text-sm leading-relaxed max-w-xs">
+              ما در آرمان لوکس با بیش از دو دهه تجربه، رویای زندگی در فضایی امن، مدرن و زیبا را برای شما به واقعیت تبدیل می‌کنیم.
+            </p>
+            
+            <div className="flex items-center gap-4">
                 {socialLinks.map((social) => {
                   const Icon = social.icon;
                   return (
                     <a
                       key={social.id}
                       href={social.href}
-                      className={`w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 ${social.color}`}
+                      className={`text-gray-400 transition-colors duration-300 ${social.color}`}
                       aria-label={social.label}
                     >
                       <Icon className="w-5 h-5" />
                     </a>
                   );
                 })}
-              </div>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Solution / Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">دسترسی سریع</h4>
-            <ul className="space-y-3">
-              {quickLinks.map((link) => (
+            <h4 className="text-primary font-bold mb-6">بخش‌های وبسایت</h4>
+            <ul className="space-y-3 text-sm">
+              {quickLinks.slice(0, 4).map((link) => (
                 <li key={link.id}>
                   <a
                     href={link.href}
-                    className="text-white/70 hover:text-burnt-peach transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-secondary/70 hover:text-accent transition-colors duration-200 block"
                   >
-                    <span className="w-1.5 h-1.5 bg-burnt-peach rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                     {link.title}
                   </a>
                 </li>
@@ -80,92 +75,52 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Recent Projects */}
+          {/* Company / Support */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">پروژه‌های اخیر</h4>
-            <ul className="space-y-4">
-              {recentProjects.map((project) => (
-                <li key={project.id}>
-                  <a
-                    href="#"
-                    className="group block"
-                  >
-                    <h5 className="text-white font-semibold mb-1 group-hover:text-burnt-peach transition-colors duration-300">
-                      {project.title}
-                    </h5>
-                    <p className="text-white/60 text-sm flex items-center gap-1">
-                      <MapPin className="w-3 h-3" />
-                      {project.location}
-                    </p>
-                  </a>
+             <h4 className="text-primary font-bold mb-6">پشتیبانی و مشاوره</h4>
+             <ul className="space-y-3 text-sm">
+                <li>
+                    <a href="#" className="text-secondary/70 hover:text-accent transition-colors duration-200 block">سوالات متداول</a>
                 </li>
-              ))}
-            </ul>
+                <li>
+                    <a href="#" className="text-secondary/70 hover:text-accent transition-colors duration-200 block">مرکز پشتیبانی</a>
+                </li>
+                <li>
+                    <a href="#" className="text-secondary/70 hover:text-accent transition-colors duration-200 block">شرایط و قوانین</a>
+                </li>
+             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">تماس با ما</h4>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-burnt-peach/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 h-5 text-burnt-peach" />
-                </div>
-                <div>
-                  <p className="text-sm text-white/60 mb-1">تلفن تماس</p>
-                  <a href="tel:+982188776655" className="text-white hover:text-burnt-peach transition-colors duration-300">
-                    021-88776655
-                  </a>
-                </div>
+            <h4 className="text-primary font-bold mb-6">تماس با ما</h4>
+            <ul className="space-y-4 text-sm">
+              <li className="flex items-center gap-3 text-secondary/70">
+                <MapPin className="w-4 h-4 text-accent" />
+                <span>تهران، ولنجک، خیابان ۱۳، پلاک ۲۵</span>
               </li>
-
-              <li className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-burnt-peach/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-5 h-5 text-burnt-peach" />
-                </div>
-                <div>
-                  <p className="text-sm text-white/60 mb-1">ایمیل</p>
-                  <a href="mailto:info@armanlux.ir" className="text-white hover:text-burnt-peach transition-colors duration-300">
-                    info@armanlux.ir
-                  </a>
-                </div>
+              <li className="flex items-center gap-3 text-secondary/70">
+                <Phone className="w-4 h-4 text-accent" />
+                <span dir="ltr">021 - 22 33 44 55</span>
               </li>
-
-              <li className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-burnt-peach/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-burnt-peach" />
-                </div>
-                <div>
-                  <p className="text-sm text-white/60 mb-1">آدرس</p>
-                  <p className="text-white/90 text-sm leading-relaxed">
-                    تهران، منطقه 1، خیابان ولنجک، پلاک 125
-                  </p>
-                </div>
+              <li className="flex items-center gap-3 text-secondary/70">
+                <Mail className="w-4 h-4 text-accent" />
+                <span>info@armanlux.ir</span>
               </li>
             </ul>
           </div>
-        </div>
-      </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-white/10">
-        <div className="container-custom py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/60">
-            <p>
+        </div>
+
+        {/* Copyright */}
+        <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+             <p className="text-xs text-gray-500">
               © {currentYear} آرمان لوکس. تمامی حقوق محفوظ است.
             </p>
-            <div className="flex items-center gap-6">
-              <a href="#" className="hover:text-burnt-peach transition-colors duration-300">
-                حریم خصوصی
-              </a>
-              <a href="#" className="hover:text-burnt-peach transition-colors duration-300">
-                شرایط و قوانین
-              </a>
-              <a href="#" className="hover:text-burnt-peach transition-colors duration-300">
-                درباره ما
-              </a>
+            <div className="flex items-center gap-6 text-xs text-gray-500">
+                <a href="#" className="hover:text-primary transition-colors">حریم خصوصی</a>
+                <a href="#" className="hover:text-primary transition-colors">کوکی‌ها</a>
             </div>
-          </div>
         </div>
       </div>
     </footer>

@@ -54,26 +54,26 @@ const BuildingVariants = () => {
   };
 
   return (
-    <section id="variants" className="section-padding bg-white">
-      <div className="container-custom">
+    <section id="variants" className="py-20 bg-white">
+      <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h3 className="inline-block px-6 py-3 bg-gradient-to-r from-burnt-peach-dark to-burnt-peach text-white rounded-full text-lg font-bold mb-6 shadow-lg">
+          <h3 className="inline-block px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-bold mb-4">
             انواع واحدها
           </h3>
-          <h2 className="text-4xl md:text-5xl font-bold text-jet-black mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             انتخاب متناسب با
-            <span className="block mt-2 bg-gradient-to-r from-dusk-blue to-burnt-peach bg-clip-text text-transparent">سبک زندگی شما</span>
+            <span className="text-accent mr-2">سبک زندگی شما</span>
           </h2>
-          <p className="text-jet-black text-xl mt-6 leading-relaxed font-medium">
+          <p className="text-secondary text-lg">
             از واحدهای دو خوابه تا پنت هاوس لوکس، هر کدام با امکانات ویژه و طراحی منحصر به فرد
           </p>
         </div>
 
         {/* Variants Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Images */}
-          <div className="relative h-[500px] lg:h-[700px] rounded-2xl overflow-hidden shadow-2xl sticky top-24">
+          <div className="relative h-[400px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl sticky top-24 border-4 border-white">
             {variants.map((variant) => (
               <img
                 key={variant.id}
@@ -84,7 +84,11 @@ const BuildingVariants = () => {
                 }`}
               />
             ))}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+            <div className="absolute bottom-6 right-6 text-white text-right z-10">
+                 <p className="text-sm opacity-80 mb-1">نمای داخلی</p>
+                 <h4 className="text-xl font-bold">{variants.find(v => v.id === activeAccordion)?.title}</h4>
+            </div>
           </div>
 
           {/* Accordions */}
@@ -92,24 +96,28 @@ const BuildingVariants = () => {
             {variants.map((variant) => (
               <div
                 key={variant.id}
-                className="bg-light-cyan rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+                className={`rounded-xl overflow-hidden transition-all duration-300 ${
+                    activeAccordion === variant.id 
+                    ? 'bg-white shadow-lg border-2 border-accent/20' 
+                    : 'bg-surface border border-transparent hover:bg-gray-50'
+                }`}
               >
                 {/* Accordion Header */}
                 <button
                   onClick={() => toggleAccordion(variant.id)}
-                  className="w-full flex items-center justify-between p-6 text-right hover:bg-white transition-colors duration-300"
+                  className="w-full flex items-center justify-between p-6 text-right"
                 >
-                  <h3 className="text-xl font-bold text-jet-black">{variant.title}</h3>
+                  <h3 className={`text-lg font-bold ${activeAccordion === variant.id ? 'text-accent' : 'text-primary'}`}>{variant.title}</h3>
                   <ChevronDown
-                    className={`w-6 h-6 text-dusk-blue transition-transform duration-300 ${
-                      activeAccordion === variant.id ? 'rotate-180' : ''
+                    className={`w-5 h-5 transition-transform duration-300 ${
+                      activeAccordion === variant.id ? 'rotate-180 text-accent' : 'text-gray-400'
                     }`}
                   />
                 </button>
 
                 {/* Accordion Content */}
                 <div
-                  className={`overflow-hidden transition-all duration-400 ${
+                  className={`overflow-hidden transition-all duration-300 ${
                     activeAccordion === variant.id ? 'max-h-[500px]' : 'max-h-0'
                   }`}
                 >
@@ -117,13 +125,13 @@ const BuildingVariants = () => {
                     {variant.features.map((feature, index) => (
                       <div
                         key={index}
-                        className="flex items-start gap-3 text-warm-gray"
+                        className="flex items-start gap-3 text-secondary"
                       >
-                        <div className="w-2 h-2 bg-dusk-blue rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-base leading-relaxed">{feature}</p>
+                        <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-sm leading-relaxed">{feature}</p>
                       </div>
                     ))}
-                    <button className="btn-primary mt-6 w-full sm:w-auto">
+                    <button className="mt-6 px-6 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90 transition-all w-full sm:w-auto">
                       دریافت قیمت
                     </button>
                   </div>

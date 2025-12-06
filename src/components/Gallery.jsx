@@ -94,18 +94,18 @@ const Gallery = () => {
   };
 
   return (
-    <section id="gallery" className="section-padding bg-white">
-      <div className="container-custom">
+    <section id="gallery" className="py-20 bg-white">
+      <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h3 className="inline-block px-6 py-3 bg-gradient-to-r from-dusk-blue to-burnt-peach text-white rounded-full text-lg font-bold mb-6 shadow-lg">
+          <h3 className="inline-block px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-bold mb-4">
             گالری تصاویر
           </h3>
-          <h2 className="text-4xl md:text-5xl font-bold text-jet-black mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             نگاهی به
-            <span className="block mt-2 bg-gradient-to-r from-dusk-blue to-burnt-peach bg-clip-text text-transparent">زیبایی پروژه</span>
+            <span className="text-accent mr-2">زیبایی پروژه</span>
           </h2>
-          <p className="text-jet-black text-xl mt-6 leading-relaxed font-medium">
+          <p className="text-secondary text-lg">
             تصاویر واقعی از نما، فضاها و امکانات ساختمان
           </p>
         </div>
@@ -116,10 +116,10 @@ const Gallery = () => {
             <button
               key={category.id}
               onClick={() => setActiveCategory(category.id)}
-              className={`px-6 py-3 rounded-full font-semibold text-base transition-all duration-300 border-2 ${
+              className={`px-5 py-2 rounded-full font-medium text-sm transition-all duration-300 border ${
                 activeCategory === category.id
-                  ? 'bg-dusk-blue border-dusk-blue text-white shadow-xl scale-105'
-                  : 'bg-white border-stone text-jet-black hover:border-dusk-blue hover:bg-light-cyan'
+                  ? 'bg-primary border-primary text-white shadow-lg'
+                  : 'bg-white border-gray-200 text-secondary hover:border-primary hover:text-primary'
               }`}
             >
               {category.title}
@@ -132,7 +132,7 @@ const Gallery = () => {
           {filteredImages.map((image, index) => (
             <div
               key={image.id}
-              className="group relative aspect-[4/3] overflow-hidden rounded-xl cursor-pointer shadow-md hover:shadow-2xl transition-all duration-300"
+              className="group relative aspect-[4/3] overflow-hidden rounded-xl cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300"
               onClick={() => openLightbox(image)}
               style={{ animationDelay: `${index * 0.05}s` }}
             >
@@ -141,7 +141,7 @@ const Gallery = () => {
                 alt={image.title}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-0 right-0 left-0 p-6">
                   <h3 className="text-white text-lg font-bold">{image.title}</h3>
                 </div>
@@ -191,9 +191,9 @@ const Gallery = () => {
             <img
               src={selectedImage.src}
               alt={selectedImage.title}
-              className="max-w-full max-h-[90vh] object-contain rounded-lg"
+              className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
             />
-            <div className="absolute bottom-0 right-0 left-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
+            <div className="absolute bottom-0 right-0 left-0 bg-gradient-to-t from-black/90 to-transparent p-6 rounded-b-lg">
               <h3 className="text-white text-2xl font-bold text-center">{selectedImage.title}</h3>
             </div>
           </div>

@@ -23,114 +23,102 @@ const InvestmentCTA = () => {
   ];
 
   return (
-    <section className="section-padding bg-gradient-to-br from-dusk-blue via-dusk-blue-dark to-dusk-blue relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-          backgroundSize: '40px 40px'
-        }}></div>
-      </div>
-
-      <div className="container-custom relative z-10">
-        <div className="max-w-5xl mx-auto">
-          {/* Main Content */}
-          <div className="text-center text-white mb-12">
-            <h3 className="inline-block px-6 py-3 bg-burnt-peach text-jet-black rounded-full text-lg font-bold mb-6 shadow-xl">
-              فرصت سرمایه‌گذاری
-            </h3>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white">
-              بهترین سرمایه‌گذاری برای
-              <br />
-              <span className="text-burnt-peach drop-shadow-lg">آینده درخشان شما</span>
-            </h2>
-            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed font-medium">
-              با خرید واحد در این پروژه، نه تنها صاحب یک خانه لوکس می‌شوید، بلکه سرمایه‌ای امن و سودآور برای آینده خود ایجاد می‌کنید
-            </p>
-          </div>
-
-          {/* Benefits Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            {benefits.map((benefit) => {
-              const Icon = benefit.icon;
-              return (
-                <div key={benefit.id} className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-center hover:bg-white/20 transition-all duration-300">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-burnt-peach/20 rounded-full flex items-center justify-center">
-                    <Icon className="w-8 h-8 text-burnt-peach" />
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-2">{benefit.title}</h3>
-                  <p className="text-white/80 text-sm">{benefit.description}</p>
+    <section className="py-24 bg-primary text-white">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="max-w-6xl mx-auto">
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+             
+             {/* Text Content */}
+             <div className="space-y-8">
+                <div className="inline-block px-4 py-1.5 bg-accent/20 text-accent font-semibold text-sm rounded-full">
+                  فرصت سرمایه‌گذاری
                 </div>
-              );
-            })}
+                
+                <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+                  سرمایه‌گذاری مطمئن
+                  <br />
+                  <span className="text-accent">آینده‌ای درخشان</span>
+                </h2>
+                
+                <p className="text-lg text-gray-300 leading-relaxed">
+                  با خرید واحد در این پروژه، نه تنها صاحب یک خانه لوکس می‌شوید، بلکه سرمایه‌ای امن و سودآور برای آینده خود ایجاد می‌کنید. تضمین رشد سرمایه شما با ماست.
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
+                    {benefits.map((benefit) => {
+                      const Icon = benefit.icon;
+                      return (
+                        <div key={benefit.id} className="space-y-3">
+                           <div className="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center">
+                            <Icon className="w-6 h-6 text-accent" />
+                          </div>
+                          <h3 className="font-bold">{benefit.title}</h3>
+                          <p className="text-sm text-gray-400">{benefit.description}</p>
+                        </div>
+                      );
+                    })}
+                </div>
+             </div>
+
+             {/* Form Card */}
+             <div className="bg-white rounded-2xl p-8 md:p-10 shadow-2xl">
+                <h3 className="text-2xl font-bold text-primary mb-2">درخواست مشاوره</h3>
+                <p className="text-secondary mb-8">فرم زیر را پر کنید تا کارشناسان ما با شما تماس بگیرند.</p>
+                
+                <form className="space-y-4">
+                    <div>
+                        <label className="block text-sm font-medium text-secondary mb-1">نام و نام خانوادگی</label>
+                        <input
+                          type="text"
+                          className="w-full px-4 py-3 rounded-lg bg-surface border border-gray-200 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-primary"
+                          placeholder="مثال: علی محمدی"
+                        />
+                    </div>
+                    <div>
+                        <label className="block text-sm font-medium text-secondary mb-1">شماره تماس</label>
+                        <input
+                          type="tel"
+                          className="w-full px-4 py-3 rounded-lg bg-surface border border-gray-200 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-primary"
+                          placeholder="مثال: 09123456789"
+                        />
+                    </div>
+                     <div>
+                        <label className="block text-sm font-medium text-secondary mb-1">توضیحات (اختیاری)</label>
+                        <textarea
+                          rows="3"
+                          className="w-full px-4 py-3 rounded-lg bg-surface border border-gray-200 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-primary resize-none"
+                        ></textarea>
+                    </div>
+
+                    <button type="button" className="w-full py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 mt-2">
+                        ثبت درخواست رایگان
+                    </button>
+                </form>
+             </div>
+
           </div>
 
-          {/* CTA Section */}
-          <div className="bg-white/95 backdrop-blur-md rounded-2xl p-8 md:p-12 text-center shadow-2xl">
-            <h3 className="text-3xl font-bold text-jet-black mb-4">
-              همین الان درخواست مشاوره رایگان بدهید
-            </h3>
-            <p className="text-warm-gray text-lg mb-8 max-w-2xl mx-auto">
-              کارشناسان ما آماده پاسخگویی به سوالات شما و ارائه بهترین پیشنهادات هستند
-            </p>
-
-            {/* Contact Form */}
-            <div className="max-w-2xl mx-auto">
-              <form className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                <input
-                  type="text"
-                  placeholder="نام و نام خانوادگی"
-                  className="px-6 py-4 rounded-lg border-2 border-stone focus:border-dusk-blue outline-none transition-colors duration-300 text-right"
-                  required
-                />
-                <input
-                  type="tel"
-                  placeholder="شماره تماس"
-                  className="px-6 py-4 rounded-lg border-2 border-stone focus:border-dusk-blue outline-none transition-colors duration-300 text-right"
-                  required
-                />
-                <input
-                  type="email"
-                  placeholder="ایمیل"
-                  className="px-6 py-4 rounded-lg border-2 border-stone focus:border-dusk-blue outline-none transition-colors duration-300 text-right md:col-span-2"
-                />
-                <textarea
-                  placeholder="توضیحات (اختیاری)"
-                  rows="4"
-                  className="px-6 py-4 rounded-lg border-2 border-stone focus:border-dusk-blue outline-none transition-colors duration-300 text-right md:col-span-2 resize-none"
-                ></textarea>
-              </form>
-
-              <button className="btn-burnt-peach w-full md:w-auto md:px-16">
-                <PhoneCall className="w-5 h-5 inline-block ml-2" />
-                درخواست مشاوره رایگان
-              </button>
-
-              <p className="text-sm text-warm-gray mt-4">
-                پاسخگویی در کمتر از 30 دقیقه
-              </p>
-            </div>
+          {/* Stats Bar */}
+          <div className="mt-20 pt-10 border-t border-white/10 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+             <div className="space-y-2">
+                <div className="text-4xl font-bold text-accent">1K+</div>
+                <div className="text-sm text-gray-400">مشتری راضی</div>
+             </div>
+             <div className="space-y-2">
+                <div className="text-4xl font-bold text-accent">50+</div>
+                <div className="text-sm text-gray-400">پروژه موفق</div>
+             </div>
+             <div className="space-y-2">
+                <div className="text-4xl font-bold text-accent">20</div>
+                <div className="text-sm text-gray-400">سال تجربه</div>
+             </div>
+             <div className="space-y-2">
+                <div className="text-4xl font-bold text-accent">100%</div>
+                <div className="text-sm text-gray-400">تعهد اجرایی</div>
+             </div>
           </div>
-
-          {/* Bottom Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 text-center text-white">
-            <div>
-              <div className="text-3xl font-bold text-burnt-peach mb-1">1000+</div>
-              <div className="text-sm text-white/80">مشتری راضی</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-burnt-peach mb-1">50+</div>
-              <div className="text-sm text-white/80">پروژه موفق</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-burnt-peach mb-1">20</div>
-              <div className="text-sm text-white/80">سال تجربه</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-burnt-peach mb-1">%100</div>
-              <div className="text-sm text-white/80">رضایت مشتری</div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>

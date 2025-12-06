@@ -7,19 +7,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        'dusk-blue': '#3d5a80',
-        'dusk-blue-dark': '#2d4560',
-        'powder-blue': '#98c1d9',
-        'light-cyan': '#e0fbfc',
-        'burnt-peach': '#ee6c4d',
-        'burnt-peach-dark': '#d85a3d',
-        'jet-black': '#293241',
-        'warm-gray': '#6B6B6B',
-        'stone': '#d4e4e8',
+        'primary': '#0f172a', // Deep Navy (Slate 900)
+        'secondary': '#334155', // Slate 700
+        'accent': '#0d9488', // Teal 600
+        'accent-light': '#2dd4bf', // Teal 400
+        'accent-dark': '#115e59', // Teal 800
+        'surface': '#f8fafc', // Slate 50
+        'surface-hover': '#f1f5f9', // Slate 100
+        'white': '#ffffff',
       },
       fontFamily: {
         'vazir': ['Vazirmatn', 'sans-serif'],
-        'estedad': ['Estedad', 'sans-serif'],
       },
       spacing: {
         '18': '4.5rem',

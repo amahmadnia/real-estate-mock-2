@@ -42,19 +42,19 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="section-padding bg-white">
-      <div className="container-custom">
+    <section id="faq" className="py-20 bg-surface">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h3 className="inline-block px-6 py-3 bg-dusk-blue text-white rounded-full text-lg font-bold mb-6 shadow-lg">
+            <h3 className="inline-block px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-bold mb-4">
               سوالات متداول
             </h3>
-            <h2 className="text-4xl md:text-5xl font-bold text-jet-black mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
               پاسخ به
-              <span className="block mt-2 bg-gradient-to-r from-dusk-blue to-burnt-peach bg-clip-text text-transparent">سوالات شما</span>
+              <span className="text-accent mr-2">سوالات شما</span>
             </h2>
-            <p className="text-jet-black text-xl mt-6 leading-relaxed font-medium">
+            <p className="text-secondary text-lg">
               پاسخ سوالات رایج درباره پروژه، قیمت‌ها و شرایط خرید
             </p>
           </div>
@@ -64,36 +64,36 @@ const FAQ = () => {
             {faqs.map((faq) => (
               <div
                 key={faq.id}
-                className="bg-light-cyan rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
+                className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300"
               >
                 {/* Question */}
                 <button
                   onClick={() => toggleAccordion(faq.id)}
-                  className="w-full flex items-center justify-between gap-4 p-6 text-right hover:bg-white transition-colors duration-300"
+                  className="w-full flex items-center justify-between gap-4 p-6 text-right transition-colors duration-300"
                 >
-                  <h3 className="text-lg font-bold text-jet-black flex-1">
+                  <h3 className={`text-lg font-bold flex-1 ${activeIndex === faq.id ? 'text-accent' : 'text-primary'}`}>
                     {faq.question}
                   </h3>
-                  <div className={`w-8 h-8 bg-dusk-blue/10 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
-                    activeIndex === faq.id ? 'bg-dusk-blue' : ''
+                  <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
+                    activeIndex === faq.id ? 'bg-accent/10 text-accent' : 'bg-gray-100 text-gray-500'
                   }`}>
                     {activeIndex === faq.id ? (
-                      <Minus className="w-5 h-5 text-white" />
+                      <Minus className="w-5 h-5" />
                     ) : (
-                      <Plus className="w-5 h-5 text-dusk-blue" />
+                      <Plus className="w-5 h-5" />
                     )}
                   </div>
                 </button>
 
                 {/* Answer */}
                 <div
-                  className={`overflow-hidden transition-all duration-400 ${
+                  className={`overflow-hidden transition-all duration-300 ${
                     activeIndex === faq.id ? 'max-h-96' : 'max-h-0'
                   }`}
                 >
                   <div className="px-6 pb-6">
-                    <div className="border-r-4 border-burnt-peach pr-4">
-                      <p className="text-warm-gray leading-relaxed">
+                    <div className="border-r-2 border-accent/20 pr-4">
+                      <p className="text-secondary leading-relaxed">
                         {faq.answer}
                       </p>
                     </div>
@@ -104,14 +104,14 @@ const FAQ = () => {
           </div>
 
           {/* Contact CTA */}
-          <div className="mt-12 text-center bg-gradient-to-r from-light-cyan to-white rounded-2xl p-8 border border-stone/30">
-            <h3 className="text-2xl font-bold text-jet-black mb-3">
+          <div className="mt-12 text-center bg-white rounded-2xl p-8 border border-gray-100 shadow-lg">
+            <h3 className="text-xl font-bold text-primary mb-2">
               سوال دیگری دارید؟
             </h3>
-            <p className="text-warm-gray mb-6">
+            <p className="text-secondary mb-6">
               تیم ما آماده پاسخگویی به تمام سوالات شماست
             </p>
-            <a href="#contact" className="btn-primary inline-block">
+            <a href="#contact" className="px-6 py-2.5 border border-primary text-primary font-medium rounded-lg hover:bg-primary hover:text-white transition-all inline-block">
               تماس با ما
             </a>
           </div>

@@ -90,40 +90,40 @@ const Amenities = () => {
   ];
 
   return (
-    <section id="amenities" className="section-padding bg-gradient-to-br from-light-cyan via-white to-light-cyan">
-      <div className="container-custom">
+    <section id="amenities" className="py-20 bg-surface">
+      <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h3 className="inline-block px-6 py-3 bg-burnt-peach text-white rounded-full text-lg font-bold mb-6 shadow-lg">
+          <h3 className="inline-block px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-bold mb-4">
             امکانات رفاهی
           </h3>
-          <h2 className="text-4xl md:text-5xl font-bold text-jet-black mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             تجربه زندگی
-            <span className="block mt-2 bg-gradient-to-r from-dusk-blue to-burnt-peach bg-clip-text text-transparent">در سطح جهانی</span>
+            <span className="text-accent mr-2">در سطح جهانی</span>
           </h2>
-          <p className="text-jet-black text-xl mt-6 leading-relaxed font-medium">
+          <p className="text-secondary text-lg font-medium">
             بیش از 20 امکانات لوکس و پیشرفته برای راحتی و آسایش شما
           </p>
         </div>
 
         {/* Amenities Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {amenities.map((amenity, index) => {
             const Icon = amenity.icon;
             return (
               <div
                 key={amenity.id}
-                className="group text-center p-8 rounded-2xl bg-white border-2 border-stone/30 hover:border-burnt-peach hover:shadow-2xl transition-all duration-300 hover:-translate-y-3"
+                className="group text-center p-8 rounded-2xl bg-white border border-gray-100 hover:border-accent hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 {/* Icon Container */}
-                <div className="w-24 h-24 mx-auto mb-5 bg-gradient-to-br from-dusk-blue to-powder-blue rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
-                  <Icon className="w-12 h-12 text-white" strokeWidth={1.5} />
+                <div className="w-16 h-16 mx-auto mb-5 bg-surface rounded-2xl flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all duration-300 text-accent">
+                  <Icon className="w-8 h-8" strokeWidth={1.5} />
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-bold text-jet-black mb-3 group-hover:text-dusk-blue transition-colors">{amenity.title}</h3>
-                <p className="text-base text-jet-black/70 leading-relaxed">{amenity.description}</p>
+                <h3 className="text-lg font-bold text-primary mb-2 group-hover:text-accent transition-colors">{amenity.title}</h3>
+                <p className="text-sm text-secondary leading-relaxed">{amenity.description}</p>
               </div>
             );
           })}
@@ -131,10 +131,10 @@ const Amenities = () => {
 
         {/* Bottom CTA */}
         <div className="mt-16 text-center">
-          <p className="text-lg text-warm-gray mb-6">
+          <p className="text-secondary mb-6">
             امکانات بیشتر منتظر شماست. برای دریافت اطلاعات کامل با ما تماس بگیرید.
           </p>
-          <a href="#contact" className="btn-primary inline-block">
+          <a href="#contact" className="px-8 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary/90 transition-all inline-block">
             دریافت کاتالوگ کامل
           </a>
         </div>
