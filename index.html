@@ -1,13 +1,1040 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>real-estate-mock-2</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="برج ساحلی لوکس آریانا - زندگی رویایی در کنار دریا با امکانات بی‌نظیر و چشم‌انداز استثنائی">
+    <meta name="keywords" content="برج ساحلی, املاک لوکس, خرید آپارتمان, برج آریانا, آپارتمان ساحلی">
+    <meta name="author" content="گروه املاک آریانا">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="برج آریانا - برج ساحلی لوکس">
+    <meta property="og:description" content="زندگی رویایی در کنار دریا با امکانات بی‌نظیر">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fa_IR">
+
+    <title>برج آریانا - برج ساحلی لوکس</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/variables.css">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/responsive.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar__content">
+                <div class="top-bar__contact">
+                    <a href="tel:+982191234567" class="top-bar__link">
+                        <i class="fas fa-phone"></i>
+                        <span>021-91234567</span>
+                    </a>
+                    <a href="mailto:info@ariyana-tower.com" class="top-bar__link">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@ariyana-tower.com</span>
+                    </a>
+                </div>
+                <div class="top-bar__social">
+                    <a href="#" class="top-bar__social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="top-bar__social-link" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://wa.me/989123456789" class="top-bar__social-link" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__content">
+                    <a href="#" class="navbar__logo">
+                        <span class="logo-text">برج آریانا</span>
+                    </a>
+
+                    <button class="navbar__toggle" id="navbar-toggle" aria-label="منوی اصلی">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <ul class="navbar__menu" id="navbar-menu">
+                        <li class="navbar__item">
+                            <a href="#home" class="navbar__link navbar__link--active">خانه</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#about" class="navbar__link">درباره پروژه</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#amenities" class="navbar__link">امکانات</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#floor-plans" class="navbar__link">پلان واحدها</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#gallery" class="navbar__link">گالری</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#contact" class="navbar__link">تماس با ما</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero__image-container">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1920&h=800&fit=crop"
+                 alt="برج ساحلی لوکس آریانا"
+                 class="hero__image">
+            <div class="hero__overlay"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title animate-element">برج ساحلی لوکس آریانا</h1>
+                <p class="hero__subtitle animate-element">زندگی رویایی در کنار دریا با چشم‌انداز بی‌نظیر به خلیج فارس</p>
+                <button class="button button-primary hero__cta animate-element" data-scroll-to="#floor-plans">
+                    مشاهده واحدها
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+
+            <div class="agent-card glass-panel animate-element">
+                <div class="agent-card__image">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop"
+                         alt="مشاور املاک"
+                         class="agent-card__photo">
+                </div>
+                <div class="agent-card__info">
+                    <h3 class="agent-card__name">مهندس رضا احمدی</h3>
+                    <p class="agent-card__title">مشاور ارشد فروش</p>
+                    <a href="tel:+989123456789" class="agent-card__phone">
+                        <i class="fas fa-phone"></i>
+                        <span>0912-345-6789</span>
+                    </a>
+                    <a href="https://wa.me/989123456789?text=سلام، من در مورد پروژه برج آریانا اطلاعات بیشتری می‌خواهم"
+                       class="button button-secondary agent-card__whatsapp"
+                       target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        تماس در واتساپ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title animate-element">درباره پروژه</h2>
+                <div class="section__divider"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-content__text animate-element">
+                    <p class="text-large">
+                        برج آریانا، شاهکاری معماری در قلب ساحل خلیج فارس، با طراحی مدرن و امکانات بی‌نظیر،
+                        تجربه‌ای متفاوت از زندگی لوکس را برای ساکنان خود به ارمغان می‌آورد.
+                    </p>
+                    <p>
+                        این پروژه منحصر به فرد با بهره‌گیری از جدیدترین تکنولوژی‌های روز دنیا و با الهام از معماری
+                        مدرن اروپایی، فضایی امن، راحت و لوکس را برای خانواده‌های ایرانی فراهم آورده است.
+                        با چشم‌انداز ۲۷۰ درجه به دریا و دسترسی آسان به تمامی امکانات رفاهی، این برج مقصدی ایده‌آل
+                        برای کسانی است که به دنبال بهترین‌ها هستند.
+                    </p>
+                    <p>
+                        واحدهای این مجموعه با متراژ متنوع از ۸۰ تا ۲۵۰ متر مربع و با طراحی هوشمندانه فضا،
+                        پاسخگوی نیاز هر خانواده ایرانی می‌باشد. تمامی واحدها دارای نمای رو به دریا و بالکن‌های
+                        وسیع برای لذت بردن از غروب‌های خلیج فارس هستند.
+                    </p>
+                </div>
+
+                <div class="about-content__image animate-element">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop"
+                         alt="نمای بیرونی برج آریانا"
+                         class="about-image">
+                </div>
+            </div>
+
+            <div class="specs-grid">
+                <div class="spec-card animate-element">
+                    <div class="spec-card__icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="spec-card__content">
+                        <h3 class="spec-card__title">تعداد طبقات</h3>
+                        <p class="spec-card__value">۲۵ طبقه</p>
+                    </div>
+                </div>
+
+                <div class="spec-card animate-element">
+                    <div class="spec-card__icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="spec-card__content">
+                        <h3 class="spec-card__title">تعداد واحدها</h3>
+                        <p class="spec-card__value">۱۰۰ واحد</p>
+                    </div>
+                </div>
+
+                <div class="spec-card animate-element">
+                    <div class="spec-card__icon">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <div class="spec-card__content">
+                        <h3 class="spec-card__title">متراژ واحدها</h3>
+                        <p class="spec-card__value">۸۰ تا ۲۵۰ متر</p>
+                    </div>
+                </div>
+
+                <div class="spec-card animate-element">
+                    <div class="spec-card__icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="spec-card__content">
+                        <h3 class="spec-card__title">سال تحویل</h3>
+                        <p class="spec-card__value">۱۴۰۵</p>
+                    </div>
+                </div>
+
+                <div class="spec-card animate-element">
+                    <div class="spec-card__icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="spec-card__content">
+                        <h3 class="spec-card__title">نوع سند</h3>
+                        <p class="spec-card__value">تک‌برگ شش‌دانگ</p>
+                    </div>
+                </div>
+
+                <div class="spec-card animate-element">
+                    <div class="spec-card__icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="spec-card__content">
+                        <h3 class="spec-card__title">موقعیت</h3>
+                        <p class="spec-card__value">ساحل خلیج فارس</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section amenities-section" id="amenities">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title animate-element">امکانات و خدمات</h2>
+                <div class="section__divider"></div>
+                <p class="section__description animate-element">
+                    برج آریانا با ارائه امکانات و خدمات منحصر به فرد، استانداردی نوین از زندگی لوکس را تعریف می‌کند
+                </p>
+            </div>
+
+            <div class="amenities-grid">
+                <div class="amenity-card animate-element">
+                    <div class="amenity-card__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=800&fit=crop"
+                             alt="لابی لوکس"
+                             class="amenity-card__image">
+                        <div class="amenity-card__overlay"></div>
+                    </div>
+                    <div class="amenity-card__content">
+                        <h3 class="amenity-card__title">لابی مجلل و لوکس</h3>
+                        <p class="amenity-card__description">
+                            لابی بزرگ و مجلل با ارتفاع سقف ۸ متر، تزئین شده با مرمر ایتالیایی و لوستر‌های کریستالی،
+                            اولین تجربه شما از ورود به برج آریانا خواهد بود.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="amenity-card animate-element">
+                    <div class="amenity-card__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?w=1200&h=800&fit=crop"
+                             alt="استخر سرپوشیده"
+                             class="amenity-card__image">
+                        <div class="amenity-card__overlay"></div>
+                    </div>
+                    <div class="amenity-card__content">
+                        <h3 class="amenity-card__title">استخر سرپوشیده و روباز</h3>
+                        <p class="amenity-card__description">
+                            استخر سرپوشیده با آب گرم در زمستان و استخر روباز با نمای رو به دریا برای فصل تابستان،
+                            همراه با سونا و جکوزی برای اوقات فراغت شما.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="amenity-card animate-element">
+                    <div class="amenity-card__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&h=800&fit=crop"
+                             alt="باشگاه ورزشی"
+                             class="amenity-card__image">
+                        <div class="amenity-card__overlay"></div>
+                    </div>
+                    <div class="amenity-card__content">
+                        <h3 class="amenity-card__title">باشگاه ورزشی مجهز</h3>
+                        <p class="amenity-card__description">
+                            باشگاه ورزشی ۴۰۰ متری مجهز به جدیدترین دستگاه‌های ورزشی تکنوجیم، سالن یوگا و پیلاتس،
+                            و مربیان مجرب در خدمت سلامتی شماست.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="amenity-card animate-element">
+                    <div class="amenity-card__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=800&fit=crop"
+                             alt="فضای سبز"
+                             class="amenity-card__image">
+                        <div class="amenity-card__overlay"></div>
+                    </div>
+                    <div class="amenity-card__content">
+                        <h3 class="amenity-card__title">باغ و فضای سبز</h3>
+                        <p class="amenity-card__description">
+                            ۳۰۰۰ متر فضای سبز و باغ ایرانی با گل‌ها و گیاهان زینتی، فضایی دلنشین برای قدم زدن
+                            و استراحت در کنار فواره‌های آب نما.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="amenity-card animate-element">
+                    <div class="amenity-card__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=1200&h=800&fit=crop"
+                             alt="پارکینگ طبقاتی"
+                             class="amenity-card__image">
+                        <div class="amenity-card__overlay"></div>
+                    </div>
+                    <div class="amenity-card__content">
+                        <h3 class="amenity-card__title">پارکینگ هوشمند</h3>
+                        <p class="amenity-card__description">
+                            پارکینگ ۵ طبقه هوشمند با سیستم مدیریت پارک خودکار، دوربین‌های امنیتی و سیستم اطفاء حریق
+                            اتوماتیک برای هر واحد.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="amenity-card animate-element">
+                    <div class="amenity-card__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=800&fit=crop"
+                             alt="سالن اجتماعات"
+                             class="amenity-card__image">
+                        <div class="amenity-card__overlay"></div>
+                    </div>
+                    <div class="amenity-card__content">
+                        <h3 class="amenity-card__title">سالن همایش و اجتماعات</h3>
+                        <p class="amenity-card__description">
+                            سالن اجتماعات ۲۰۰ نفره با امکانات کامل صوتی و تصویری، مناسب برای برگزاری مهمانی‌ها
+                            و جشن‌های خانوادگی ساکنین.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section floor-plans-section" id="floor-plans">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title animate-element">پلان واحدها</h2>
+                <div class="section__divider"></div>
+                <p class="section__description animate-element">
+                    طراحی هوشمندانه فضا در متراژهای مختلف برای پاسخگویی به نیاز هر خانواده
+                </p>
+            </div>
+
+            <div class="floor-plans-grid" id="floor-plans-grid">
+                <div class="floor-plan-card animate-element" data-plan="1">
+                    <div class="floor-plan-card__image-wrapper">
+                        <img src="https://via.placeholder.com/400x400/003d5c/ffffff?text=Studio+80m"
+                             alt="پلان استودیو ۸۰ متر"
+                             class="floor-plan-card__image"
+                             loading="lazy">
+                    </div>
+                    <div class="floor-plan-card__content">
+                        <h3 class="floor-plan-card__title">واحد استودیو</h3>
+                        <div class="floor-plan-card__specs">
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>۸۰ متر</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bed"></i>
+                                <span>۱ خواب</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bath"></i>
+                                <span>۱ سرویس</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floor-plan-card animate-element" data-plan="2">
+                    <div class="floor-plan-card__image-wrapper">
+                        <img src="https://via.placeholder.com/400x400/003d5c/ffffff?text=1BR+95m"
+                             alt="پلان یک خوابه ۹۵ متر"
+                             class="floor-plan-card__image"
+                             loading="lazy">
+                    </div>
+                    <div class="floor-plan-card__content">
+                        <h3 class="floor-plan-card__title">واحد یک خوابه - نوع A</h3>
+                        <div class="floor-plan-card__specs">
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>۹۵ متر</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bed"></i>
+                                <span>۱ خواب</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bath"></i>
+                                <span>۱ سرویس</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floor-plan-card animate-element" data-plan="3">
+                    <div class="floor-plan-card__image-wrapper">
+                        <img src="https://via.placeholder.com/400x400/003d5c/ffffff?text=1BR+105m"
+                             alt="پلان یک خوابه ۱۰۵ متر"
+                             class="floor-plan-card__image"
+                             loading="lazy">
+                    </div>
+                    <div class="floor-plan-card__content">
+                        <h3 class="floor-plan-card__title">واحد یک خوابه - نوع B</h3>
+                        <div class="floor-plan-card__specs">
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>۱۰۵ متر</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bed"></i>
+                                <span>۱ خواب</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bath"></i>
+                                <span>۲ سرویس</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floor-plan-card animate-element" data-plan="4">
+                    <div class="floor-plan-card__image-wrapper">
+                        <img src="https://via.placeholder.com/400x400/003d5c/ffffff?text=2BR+120m"
+                             alt="پلان دو خوابه ۱۲۰ متر"
+                             class="floor-plan-card__image"
+                             loading="lazy">
+                    </div>
+                    <div class="floor-plan-card__content">
+                        <h3 class="floor-plan-card__title">واحد دو خوابه - نوع A</h3>
+                        <div class="floor-plan-card__specs">
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>۱۲۰ متر</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bed"></i>
+                                <span>۲ خواب</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bath"></i>
+                                <span>۲ سرویس</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floor-plan-card animate-element" data-plan="5">
+                    <div class="floor-plan-card__image-wrapper">
+                        <img src="https://via.placeholder.com/400x400/003d5c/ffffff?text=2BR+135m"
+                             alt="پلان دو خوابه ۱۳۵ متر"
+                             class="floor-plan-card__image"
+                             loading="lazy">
+                    </div>
+                    <div class="floor-plan-card__content">
+                        <h3 class="floor-plan-card__title">واحد دو خوابه - نوع B</h3>
+                        <div class="floor-plan-card__specs">
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>۱۳۵ متر</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bed"></i>
+                                <span>۲ خواب</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bath"></i>
+                                <span>۲ سرویس</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floor-plan-card animate-element" data-plan="6">
+                    <div class="floor-plan-card__image-wrapper">
+                        <img src="https://via.placeholder.com/400x400/003d5c/ffffff?text=2BR+145m"
+                             alt="پلان دو خوابه ۱۴۵ متر"
+                             class="floor-plan-card__image"
+                             loading="lazy">
+                    </div>
+                    <div class="floor-plan-card__content">
+                        <h3 class="floor-plan-card__title">واحد دو خوابه - نوع C</h3>
+                        <div class="floor-plan-card__specs">
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>۱۴۵ متر</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bed"></i>
+                                <span>۲ خواب</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bath"></i>
+                                <span>۲ سرویس</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floor-plan-card animate-element" data-plan="7">
+                    <div class="floor-plan-card__image-wrapper">
+                        <img src="https://via.placeholder.com/400x400/003d5c/ffffff?text=3BR+160m"
+                             alt="پلان سه خوابه ۱۶۰ متر"
+                             class="floor-plan-card__image"
+                             loading="lazy">
+                    </div>
+                    <div class="floor-plan-card__content">
+                        <h3 class="floor-plan-card__title">واحد سه خوابه - نوع A</h3>
+                        <div class="floor-plan-card__specs">
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>۱۶۰ متر</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bed"></i>
+                                <span>۳ خواب</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bath"></i>
+                                <span>۲ سرویس</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floor-plan-card animate-element" data-plan="8">
+                    <div class="floor-plan-card__image-wrapper">
+                        <img src="https://via.placeholder.com/400x400/003d5c/ffffff?text=3BR+175m"
+                             alt="پلان سه خوابه ۱۷۵ متر"
+                             class="floor-plan-card__image"
+                             loading="lazy">
+                    </div>
+                    <div class="floor-plan-card__content">
+                        <h3 class="floor-plan-card__title">واحد سه خوابه - نوع B</h3>
+                        <div class="floor-plan-card__specs">
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>۱۷۵ متر</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bed"></i>
+                                <span>۳ خواب</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bath"></i>
+                                <span>۳ سرویس</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floor-plan-card animate-element" data-plan="9">
+                    <div class="floor-plan-card__image-wrapper">
+                        <img src="https://via.placeholder.com/400x400/003d5c/ffffff?text=3BR+190m"
+                             alt="پلان سه خوابه ۱۹۰ متر"
+                             class="floor-plan-card__image"
+                             loading="lazy">
+                    </div>
+                    <div class="floor-plan-card__content">
+                        <h3 class="floor-plan-card__title">واحد سه خوابه - نوع C</h3>
+                        <div class="floor-plan-card__specs">
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>۱۹۰ متر</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bed"></i>
+                                <span>۳ خواب</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bath"></i>
+                                <span>۳ سرویس</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floor-plan-card animate-element" data-plan="10">
+                    <div class="floor-plan-card__image-wrapper">
+                        <img src="https://via.placeholder.com/400x400/003d5c/ffffff?text=Penthouse+220m"
+                             alt="پلان پنت هاوس ۲۲۰ متر"
+                             class="floor-plan-card__image"
+                             loading="lazy">
+                    </div>
+                    <div class="floor-plan-card__content">
+                        <h3 class="floor-plan-card__title">پنت هاوس - نوع A</h3>
+                        <div class="floor-plan-card__specs">
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>۲۲۰ متر</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bed"></i>
+                                <span>۳ خواب</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bath"></i>
+                                <span>۳ سرویس</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floor-plan-card animate-element" data-plan="11">
+                    <div class="floor-plan-card__image-wrapper">
+                        <img src="https://via.placeholder.com/400x400/003d5c/ffffff?text=Penthouse+240m"
+                             alt="پلان پنت هاوس ۲۴۰ متر"
+                             class="floor-plan-card__image"
+                             loading="lazy">
+                    </div>
+                    <div class="floor-plan-card__content">
+                        <h3 class="floor-plan-card__title">پنت هاوس - نوع B</h3>
+                        <div class="floor-plan-card__specs">
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>۲۴۰ متر</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bed"></i>
+                                <span>۴ خواب</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bath"></i>
+                                <span>۴ سرویس</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floor-plan-card animate-element" data-plan="12">
+                    <div class="floor-plan-card__image-wrapper">
+                        <img src="https://via.placeholder.com/400x400/003d5c/ffffff?text=Penthouse+250m"
+                             alt="پلان پنت هاوس ۲۵۰ متر"
+                             class="floor-plan-card__image"
+                             loading="lazy">
+                    </div>
+                    <div class="floor-plan-card__content">
+                        <h3 class="floor-plan-card__title">پنت هاوس دوبلکس</h3>
+                        <div class="floor-plan-card__specs">
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>۲۵۰ متر</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bed"></i>
+                                <span>۴ خواب</span>
+                            </div>
+                            <div class="floor-plan-spec">
+                                <i class="fas fa-bath"></i>
+                                <span>۴ سرویس</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title animate-element">گالری تصاویر</h2>
+                <div class="section__divider"></div>
+                <p class="section__description animate-element">
+                    نگاهی به زیبایی‌های معماری و طراحی داخلی برج آریانا
+                </p>
+            </div>
+
+            <div class="gallery-grid" id="gallery-grid">
+                <div class="gallery-item animate-element" data-image="1">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&h=900&fit=crop"
+                         alt="نمای بیرونی برج در روز"
+                         class="gallery-item__image"
+                         loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item animate-element" data-image="2">
+                    <img src="https://images.unsplash.com/photo-1567684014761-b65e2e59b9eb?w=1200&h=900&fit=crop"
+                         alt="نمای شبانه برج"
+                         class="gallery-item__image"
+                         loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item animate-element" data-image="3">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&h=900&fit=crop"
+                         alt="نمای هوایی برج"
+                         class="gallery-item__image"
+                         loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item animate-element" data-image="4">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&h=900&fit=crop"
+                         alt="نشیمن لوکس"
+                         class="gallery-item__image"
+                         loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item animate-element" data-image="5">
+                    <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&h=900&fit=crop"
+                         alt="آشپزخانه مدرن"
+                         class="gallery-item__image"
+                         loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item animate-element" data-image="6">
+                    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1200&h=900&fit=crop"
+                         alt="اتاق خواب با نمای دریا"
+                         class="gallery-item__image"
+                         loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item animate-element" data-image="7">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=900&fit=crop"
+                         alt="ورودی و لابی"
+                         class="gallery-item__image"
+                         loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item animate-element" data-image="8">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&h=900&fit=crop"
+                         alt="منظره ساحل"
+                         class="gallery-item__image"
+                         loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item animate-element" data-image="9">
+                    <img src="https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=1200&h=900&fit=crop"
+                         alt="تراس با نمای دریا"
+                         class="gallery-item__image"
+                         loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title animate-element">تماس با ما</h2>
+                <div class="section__divider"></div>
+                <p class="section__description animate-element">
+                    برای دریافت اطلاعات بیشتر و بازدید از واحدها با ما در تماس باشید
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-form-wrapper animate-element">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text"
+                                   id="name"
+                                   name="name"
+                                   class="form-input"
+                                   placeholder=" "
+                                   required>
+                            <label for="name" class="form-label">نام و نام خانوادگی *</label>
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel"
+                                   id="phone"
+                                   name="phone"
+                                   class="form-input"
+                                   placeholder=" "
+                                   required>
+                            <label for="phone" class="form-label">شماره تماس *</label>
+                            <span class="form-error" id="phone-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email"
+                                   id="email"
+                                   name="email"
+                                   class="form-input"
+                                   placeholder=" ">
+                            <label for="email" class="form-label">ایمیل</label>
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="unit-type" name="unit-type" class="form-select">
+                                <option value="">انتخاب کنید</option>
+                                <option value="studio">استودیو</option>
+                                <option value="1-bed">یک خوابه</option>
+                                <option value="2-bed">دو خوابه</option>
+                                <option value="3-bed">سه خوابه</option>
+                                <option value="penthouse">پنت هاوس</option>
+                            </select>
+                            <label for="unit-type" class="form-label form-label--select">نوع واحد مورد نظر</label>
+                        </div>
+
+                        <div class="form-group form-group--full">
+                            <textarea id="message"
+                                      name="message"
+                                      class="form-textarea"
+                                      rows="5"
+                                      placeholder=" "></textarea>
+                            <label for="message" class="form-label">پیام شما</label>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+
+                        <button type="submit" class="button button-primary form-submit">
+                            <span class="button-text">ارسال پیام</span>
+                            <span class="button-loader" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+
+                        <div class="form-success" id="form-success" style="display: none;">
+                            <i class="fas fa-check-circle"></i>
+                            <p>پیام شما با موفقیت ارسال شد</p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contact-info animate-element">
+                    <div class="contact-info-card glass-panel">
+                        <h3 class="contact-info__title">اطلاعات تماس</h3>
+
+                        <div class="contact-info-item">
+                            <div class="contact-info-item__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-info-item__content">
+                                <h4>آدرس</h4>
+                                <p>تهران، منطقه ۱، خیابان ولیعصر، نرسیده به پل رومی، پلاک ۱۲۳</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-info-item__icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-info-item__content">
+                                <h4>تلفن تماس</h4>
+                                <p>
+                                    <a href="tel:+982191234567">021-91234567</a><br>
+                                    <a href="tel:+989123456789">0912-345-6789</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-info-item__icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info-item__content">
+                                <h4>ایمیل</h4>
+                                <p><a href="mailto:info@ariyana-tower.com">info@ariyana-tower.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-info-item__icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-info-item__content">
+                                <h4>ساعات کاری</h4>
+                                <p>شنبه تا پنجشنبه: ۹ صبح تا ۸ شب<br>جمعه: ۱۰ صبح تا ۶ عصر</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info__social">
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://wa.me/989123456789" class="social-link" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__column">
+                    <h3 class="footer__title">
+                        <span class="logo-text">برج آریانا</span>
+                    </h3>
+                    <p class="footer__text">
+                        برج ساحلی لوکس آریانا با ارائه بهترین امکانات و خدمات، تجربه‌ای متفاوت از زندگی مدرن
+                        را در کنار دریا برای شما به ارمغان می‌آورد.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://wa.me/989123456789" class="footer__social-link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">دسترسی سریع</h4>
+                    <ul class="footer__links">
+                        <li><a href="#home">خانه</a></li>
+                        <li><a href="#about">درباره پروژه</a></li>
+                        <li><a href="#amenities">امکانات</a></li>
+                        <li><a href="#floor-plans">پلان واحدها</a></li>
+                        <li><a href="#gallery">گالری</a></li>
+                        <li><a href="#contact">تماس با ما</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">خدمات ما</h4>
+                    <ul class="footer__links">
+                        <li><a href="#contact">مشاوره خرید</a></li>
+                        <li><a href="#contact">بازدید واحدها</a></li>
+                        <li><a href="#contact">اقساط و تسهیلات</a></li>
+                        <li><a href="#contact">خدمات پس از فروش</a></li>
+                        <li><a href="#contact">مدیریت املاک</a></li>
+                        <li><a href="#contact">طراحی داخلی</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">تماس با ما</h4>
+                    <ul class="footer__contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>تهران، منطقه ۱، خیابان ولیعصر</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span><a href="tel:+982191234567">021-91234567</a></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-mobile-alt"></i>
+                            <span><a href="tel:+989123456789">0912-345-6789</a></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:info@ariyana-tower.com">info@ariyana-tower.com</a></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>شنبه تا پنجشنبه: ۹ صبح تا ۸ شب</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom-content">
+                    <p class="footer__copyright">
+                        © ۱۴۰۴ برج آریانا. تمامی حقوق محفوظ است.
+                    </p>
+                    <div class="footer__legal">
+                        <a href="#">حریم خصوصی</a>
+                        <a href="#">شرایط استفاده</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox__close" id="lightbox-close" aria-label="بستن">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox__prev" id="lightbox-prev" aria-label="تصویر قبلی">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <button class="lightbox__next" id="lightbox-next" aria-label="تصویر بعدی">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="lightbox__content">
+            <img src="" alt="" class="lightbox__image" id="lightbox-image">
+            <div class="lightbox__counter" id="lightbox-counter"></div>
+        </div>
+    </div>
+
+    <button class="scroll-to-top" id="scroll-to-top" aria-label="برگشت به بالا">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script type="module" src="/public/js/navigation.js"></script>
+    <script type="module" src="/public/js/lightbox.js"></script>
+    <script type="module" src="/public/js/form.js"></script>
+    <script type="module" src="/public/js/main.js"></script>
+
+</body>
 </html>
