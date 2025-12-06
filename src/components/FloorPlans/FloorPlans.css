@@ -1,0 +1,180 @@
+/* ==========================================================================
+   Floor Plans Section
+   ========================================================================== */
+
+.floor-plans__header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--space-12);
+}
+
+.floor-plans__subtitle {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: rgba(44, 44, 44, 0.8);
+  margin-top: var(--space-3);
+}
+
+.floor-plans__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+}
+
+/* ==========================================================================
+   Floor Plan Cards
+   ========================================================================== */
+
+.floor-plan-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-luxury);
+  cursor: pointer;
+  opacity: 0;
+}
+
+.floor-plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.floor-plan-card__image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--color-light-gray);
+}
+
+.floor-plan-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-luxury);
+}
+
+.floor-plan-card:hover .floor-plan-card__image {
+  transform: scale(1.1);
+}
+
+.floor-plan-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 61, 92, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.floor-plan-card:hover .floor-plan-card__overlay {
+  opacity: 1;
+}
+
+.floor-plan-card__overlay i {
+  font-size: 3rem;
+  color: var(--color-white);
+  transform: scale(0.8);
+  transition: transform var(--transition-base);
+}
+
+.floor-plan-card:hover .floor-plan-card__overlay i {
+  transform: scale(1);
+}
+
+.floor-plan-card__content {
+  padding: var(--space-4);
+  text-align: center;
+}
+
+.floor-plan-card__title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-3);
+}
+
+.floor-plan-card__specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: center;
+}
+
+.floor-plan-card__spec {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--color-light-gray);
+  color: var(--color-charcoal);
+  font-size: 0.85rem;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .floor-plans__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+  }
+}
+
+@media (max-width: 992px) {
+  .floor-plans__header {
+    margin-bottom: var(--space-8);
+  }
+
+  .floor-plans__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .floor-plan-card__overlay i {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .floor-plans__header {
+    margin-bottom: var(--space-6);
+  }
+
+  .floor-plans__subtitle {
+    font-size: 1rem;
+  }
+
+  .floor-plans__grid {
+    gap: var(--space-3);
+  }
+
+  .floor-plan-card__content {
+    padding: var(--space-3);
+  }
+
+  .floor-plan-card__title {
+    font-size: 1rem;
+    margin-bottom: var(--space-2);
+  }
+
+  .floor-plan-card__spec {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .floor-plans__grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .floor-plan-card__overlay i {
+    font-size: 2rem;
+  }
+}

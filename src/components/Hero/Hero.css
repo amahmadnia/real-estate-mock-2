@@ -1,0 +1,260 @@
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 120px;
+}
+
+.hero__image-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 31, 63, 0.85) 0%,
+    rgba(0, 61, 92, 0.7) 50%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+
+.hero__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-8);
+  width: 100%;
+  padding: var(--space-6) 0;
+}
+
+.hero__text {
+  flex: 1;
+  max-width: 700px;
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.hero__title {
+  color: var(--color-white);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: var(--space-4);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero__subtitle {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  line-height: 1.6;
+  margin-bottom: var(--space-6);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+}
+
+.hero__cta {
+  font-size: 1.25rem;
+  padding: 1.25rem 3.5rem;
+}
+
+/* ==========================================================================
+   Agent Card
+   ========================================================================== */
+
+.agent-card {
+  width: 320px;
+  padding: 0;
+  animation: fadeInUp 1s ease-out 0.6s both;
+  overflow: hidden;
+}
+
+.agent-card__image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.agent-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-luxury);
+}
+
+.agent-card:hover .agent-card__image {
+  transform: scale(1.1);
+}
+
+.agent-card__content {
+  padding: var(--space-4);
+  text-align: center;
+}
+
+.agent-card__name {
+  color: var(--color-primary-dark);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--space-1);
+}
+
+.agent-card__title {
+  color: var(--color-charcoal);
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: var(--space-4);
+}
+
+.agent-card__phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: var(--space-2);
+  color: var(--color-primary);
+  font-size: 1.125rem;
+  font-weight: 600;
+  background: rgba(0, 61, 92, 0.05);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-3);
+  transition: all var(--transition-base);
+}
+
+.agent-card__phone:hover {
+  background: rgba(0, 61, 92, 0.1);
+  color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+.agent-card__phone i {
+  font-size: 1.25rem;
+}
+
+.agent-card__whatsapp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.agent-card__whatsapp i {
+  font-size: 1.25rem;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .hero {
+    margin-top: 110px;
+    height: auto;
+    min-height: 700px;
+  }
+
+  .hero__content {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-10) 0;
+  }
+
+  .hero__text {
+    max-width: 100%;
+  }
+
+  .hero__title {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+  }
+
+  .hero__subtitle {
+    max-width: 100%;
+  }
+
+  .agent-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 90px;
+    min-height: 600px;
+  }
+
+  .hero__content {
+    padding: var(--space-8) 0;
+  }
+
+  .hero__title {
+    font-size: clamp(1.75rem, 10vw, 3rem);
+    margin-bottom: var(--space-3);
+  }
+
+  .hero__subtitle {
+    font-size: clamp(1rem, 4vw, 1.25rem);
+    margin-bottom: var(--space-5);
+  }
+
+  .hero__cta {
+    font-size: 1.125rem;
+    padding: 1.125rem 2.5rem;
+  }
+
+  .agent-card {
+    max-width: 100%;
+  }
+
+  .agent-card__content {
+    padding: var(--space-3);
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    margin-top: 80px;
+  }
+
+  .hero__cta {
+    width: 100%;
+  }
+
+  .agent-card__image-wrapper {
+    height: 180px;
+  }
+
+  .agent-card__name {
+    font-size: 1.25rem;
+  }
+
+  .agent-card__phone {
+    font-size: 1rem;
+  }
+}
